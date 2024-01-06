@@ -1,5 +1,6 @@
 "use client"
 import React ,{useState} from 'react'
+import { IoFitness } from "react-icons/io5";
 
 export default function Navbar() {
 const [isOpen, setIsOpen] = useState(false)
