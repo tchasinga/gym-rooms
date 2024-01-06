@@ -15,7 +15,15 @@ const myMenu = [
 
   return (
     <nav className='w-full'>
-      
+     <div className='flex justify-between items-center'>
+        <div className="flex gap-2">
+        <IoFitness />
+        <h1>fitness room</h1>
+        </div>
+     </div>
+
+
+
     </nav>
   )
 }
