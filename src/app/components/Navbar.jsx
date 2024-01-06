@@ -1,9 +1,17 @@
-import React from 'react'
+"use client"
+import React ,{useState} from 'react'
 
 export default function Navbar() {
+const [isOpen, setIsOpen] = useState(false)
+const myMenu = [
+    {name: 'Home', Links: 'home'},
+    {name: 'About Us', Links: 'about'},
+]
+ 
+
   return (
-    <div>
-       <h1>Balolebwami</h1>
-    </div>
+    <nav className=''>
+      
+    </nav>
   )
 }
