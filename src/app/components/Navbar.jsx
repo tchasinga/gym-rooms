@@ -19,8 +19,8 @@ const myMenu = [
     <nav className='w-full'>
      <div className='flex justify-between items-center'>
         <div className="flex gap-2">
-          <IoFitness className='text-3xl text-red-500'/>
-        <h1>fitness room</h1>
+         <IoFitness className='text-3xl text-red-500'/>
+         <h1>fitness room</h1>
         </div>
      </div>
 
