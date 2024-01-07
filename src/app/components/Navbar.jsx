@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav   className='fixed font-poppins font-sans w-full left-[-20%] top-0 z-[999] text-gray-900'>
+    <nav   className=''>
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <IoFitness className="text-3xl text-slate-900" />
@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
 
         <div className="md:block hidden">
-          <ul className="flex items-center  gap-10 font-medium text-sm ">
+          <ul className="flex items-center  gap-1 font-medium text-sm ">
             {myMenu.map((item, index) => (
               <li className="myli px-6" key={index}>
                 <Link href={item.Links}>{item.name}</Link>
@@ -67,13 +67,13 @@ export default function Navbar() {
 
         <div
           className={`md:hidden text-gray-900 absolute w-full h-screen
-      px-7 py-2 font-medium bg-black top-0 duration-300 ${
-        isOpen ? "right-0" : "right-[-100%]"
+      px-7 py-2 font-medium bg-black top-0 duration-500 ${
+        isOpen ? "right-0" : "right-[100%]"
       }`}
         >
           <ul className="flex flex-col justify-center h-full font-medium text-lg gap-10 py-2">
             {myMenu.map((item, index) => (
-              <li className="myli px-6" key={index}>
+              <li className="myli px-6 text-3xl text-gray-200 font-light" key={index}>
                 <Link href={item.Links}>{item.name}</Link>
               </li>
             ))}
