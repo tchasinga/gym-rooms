@@ -16,9 +16,11 @@ ul .myli:hover{
 
 .myTrabs{
     transition: all 2.5s ease;
+    box-shadow: rgba(251, 161, 40, 70.42) 100px 40px 24px 3px;
 }
 
 .bg-black{
     background-color: rgba(0, 0, 0, 0.593);
     backdrop-filter: blur(5px);   
 }
+
