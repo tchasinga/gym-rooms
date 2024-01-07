@@ -13,3 +13,12 @@ ul .myli{
 ul .myli:hover{
     color: #770012;
 }
+
+.myTrabs{
+    transition: all 2.5s ease;
+}
+
+.bg-black{
+    background-color: rgba(0, 0, 0, 0.593);
+    backdrop-filter: blur(5px);   
+}
