@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { IoFitness } from "react-icons/io5";
 import Link from "next/link";
 import { motion } from 'framer-motion';
-// import { connect } 
+// import { connect }  from 'react-redux';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
