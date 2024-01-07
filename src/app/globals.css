@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+li:nth-child(1) {
+  color: #770012;
+}
+
+ul .myli{
+    transition: all 0.5s ease;
+}
+
+ul .myli:hover{
+    color: #770012;
+}
+
+.myTrabs{
+    transition: all 2.5s ease;
+}
+
+.bg-black{
+    background-color: rgba(0, 0, 0, 0.593);
+    backdrop-filter: blur(5px);   
+}
