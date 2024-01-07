@@ -15,8 +15,28 @@ export default function Navbar() {
     { name: "Contact", Links: "Contact" },
   ];
 
+  const variants = {
+    isOpen: {
+      transition: { staggerChildren: 0.1},
+    },
+    isOpen: {
+      transition: { staggerChildren: 0.05, staggerDirection: -1 },
+    },
+  };
+
+  const itemVariants = {
+    isOpen: {
+      y: 0,
+      opacity: 1,
+    },
+    isOpen: {
+      y: 150,
+      opacity: 0,
+    },
+  };
+
   return (
-    <nav className="">
+    <nav>
       <div className="flex justify-between items-center">
         <div className="flex gap-2 items-center">
           <IoFitness className="text-3xl text-slate-900" />
@@ -24,17 +44,17 @@ export default function Navbar() {
         </div>
 
         <div className="md:block hidden">
-          <ul className="flex gap-8 items-center font-medium text-sm ">
-            {myMenu.map((item, index) => (
-              <li className="myli" key={index}>
-                <Link href={item.Links}>{item.name}</Link>
-              </li>
+          <motion.ul className="flex gap-8 items-center font-medium text-sm" variants={variants}>
+            {myMenu.map((item) => (
+              <motion.li className="myli" key={item.Links} variants={itemVariants} >
+                <Link href={item.Links} whileHover={{scale: 1.9}}>{item.name}</Link>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
 
         <motion.button
-          whileTap={[{ scale: 1.3 }, { rotate: 180 }, {duration: 4.5}]}
+          whileTap={[{ scale: 1.3 }, { rotate: 180 }, { duration: 4.5 }]}
           className={`z-[999] ${
             isOpen ? "text-gray-200" : "text-gray-300"
           } md:hidden text-2xl`}
@@ -68,21 +88,17 @@ export default function Navbar() {
         </motion.button>
 
         <div
-          className={`md:hidden text-gray-900 absolute w-full h-screen
-      px-7 py-2 font-medium bg-black top-0 duration-500 ${
-        isOpen ? "right-0" : "right-[100%]"
-      }`}
+          className={`md:hidden text-gray-900 absolute w-full h-screen px-7 py-2 font-medium bg-black top-0 duration-500 ${
+            isOpen ? "right-0" : "right-[100%]"
+          }`}
         >
-          <ul className="flex flex-col justify-center h-full font-medium text-lg gap-10 py-2">
-            {myMenu.map((item, index) => (
-              <li
-                className="myli px-6 text-3xl text-gray-200 font-light"
-                key={index}
-              >
+          <motion.ul className="flex flex-col justify-center h-full font-medium text-lg gap-10 py-2" variants={variants}>
+            {myMenu.map((item) => (
+              <motion.li className="myli px-6 text-3xl text-gray-200 font-light" key={item.Links} variants={itemVariants}>
                 <Link href={item.Links}>{item.name}</Link>
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
       </div>
     </nav>
