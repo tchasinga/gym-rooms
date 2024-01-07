@@ -4,6 +4,7 @@ import { IoFitness } from "react-icons/io5";
 import Link from "next/link";
 import { motion } from 'framer-motion';
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const myMenu = [
@@ -88,7 +89,7 @@ export default function Navbar() {
         </motion.button>
 
         <div
-          className={`md:hidden text-gray-900 absolute w-full h-screen px-7 py-2 font-medium bg-black top-0 duration-500 ${
+          className={`md:hidden text-gray-900 absolute w-full h-screen px-7 py-2 font-medium bg-black top-0 duration-1000 ${
             isOpen ? "right-0" : "right-[100%]"
           }`}
         >
