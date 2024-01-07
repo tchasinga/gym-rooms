@@ -74,7 +74,7 @@ export default function Navbar() {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
-                className="myTrabs"
+              
               ></path>
             ) : (
               <path
@@ -82,7 +82,7 @@ export default function Navbar() {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
-                className="myTrabs"
+              
               ></path>
             )}
           </svg>
@@ -95,7 +95,7 @@ export default function Navbar() {
         >
           <motion.ul className="flex flex-col justify-center h-full font-medium text-lg gap-10 py-2" variants={variants}>
             {myMenu.map((item) => (
-              <motion.li className="myli px-6 text-3xl text-gray-200 font-light" key={item.Links} variants={itemVariants}>
+              <motion.li className="myli px-6 text-3xl text-gray-200 font-extralight" key={item.Links} variants={itemVariants}>
                 <Link href={item.Links}>{item.name}</Link>
               </motion.li>
             ))}
