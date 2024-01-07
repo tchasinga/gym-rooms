@@ -6,21 +6,21 @@ li:nth-child(1) {
   color: #770012;
 }
 
-ul .myli{
-    transition: all 0.5s ease;
+ul .myli {
+  transition: all 0.5s ease;
 }
 
-ul .myli:hover{
-    color: #770012;
+ul .myli:hover {
+  color: #770012;
 }
 
-.myTrabs{
-    transition: all 2.5s ease;
-    /* box-shadow: rgba(251, 161, 40, 70.42) 100px 40px 24px 3px; */
+.myTrabs {
+  transition: all 2.5s ease;
+  /* box-shadow: rgba(251, 161, 40, 70.42) 100px 40px 24px 3px; */
+  
 }
 
-.bg-black{
-    background-color: rgba(0, 0, 0, 0.593);
-    backdrop-filter: blur(5px);   
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.593);
+  backdrop-filter: blur(5px);
 }
-
