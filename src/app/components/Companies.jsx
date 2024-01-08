@@ -5,7 +5,7 @@ export default function Companies() {
     <div className=''>
 
       <div className="myback">
-        <div className="max-w-6xl mx-auto p-5 items-center justify-center flex gap-10">
+        <div className="max-w-6xl mx-auto p-5 items-center justify-center flex gap-10 flex-wrap w-full">
           <div className="text-white">
             <h1 className='text-2xl font-bold'>500K+ More</h1>
             <p className='text-sm text-slate-400'>Trusted Companies Partner</p>
@@ -23,7 +23,7 @@ export default function Companies() {
 
           <div className="text-white">
             <h1 className='text-2xl font-bold'>Awards </h1>
-            <p className='text-sm text-slate-400'>Gain an award of the trainer</p>
+            <p className='text-sm text-slate-400'>Gain an award of the best trainer</p>
           </div>
         </div>
       </div>
