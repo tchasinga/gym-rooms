@@ -32,19 +32,39 @@ export default function Companies() {
         </div>
       </div>
 
-        <div className="max-w-6xl mx-auto mt-10">
+        <div className="max-w-6xl mx-auto mt-7 flex justify-center Success">
 
-            <div className="relative">
-                <div className='w-1/2 rounded-2xl'>
-                    <Image src={ketut} className='rounded-2xl' />
+            <div className="relative  w-2/3 flex-1">
+                <div className='myWidth rounded-2xl'>
+                    <Image src={ketut} className='rounded-2xl border' />
                 </div>
-                <div className='flex items-center bg-slate-200 w-44 py-2 px-1 rounded-2xl'>
+                <div className='flex border items-center myblur w-44 py-2 px-1 rounded-2xl absolute top-[60%] left-[69%]'>
                     <Image src={ImageIcon} className='h-8 w-8 text-red-800'/>
                     <p className='text-sm'>Professional Trainer</p>
                 </div>
             </div>
 
             {/* Second child will be added here.... */}
+
+            <div className='flex flex-col mt-3'>
+                <h1 className='text-white font-bold text-2xl mb-10'>Get Ready To Reach <br /> Your Fitness Goals</h1>
+                <div className='text-sm text-slate-400 font-normal mb-10'>
+                    <p>We are a gym that is commited to helping people</p>
+                    <p>Reach their fitness goals, we are offer a variety of theirs</p>
+                    <p>Programs and services to fit your needs, whether</p>
+                    <p>You are experienced othiete</p>
+                </div>
+
+                <div className='text-sm text-slate-400 font-normal'>
+                    <p>We believe that everyone should have access to</p>
+                    <p>the benefits of exercices make it happen</p>
+                </div>
+
+                <div className="bg-red-800 w-44 text-center py-2 rounded-xl cursor-pointer mt-10">
+                    <h3 className='text-slate-300 font-medium'>Free trial week</h3>
+                </div>
+            </div>
+
         </div>
 
     </div>

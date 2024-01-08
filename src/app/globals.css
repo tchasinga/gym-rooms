@@ -95,3 +95,21 @@ section:nth-child(1){
 .myback{
   background: #35363a;
 }
+
+.myblur{
+  backdrop-filter: blur(5px);
+  background-color: rgba(226, 232, 240, 0.224);
+}
+
+.myWidth{
+  max-width: 80%;
+  object-fit: contain;
+  /* height: 100px; */
+}
+
+.Success{
+  position: relative;
+  top: 0%;
+  bottom: 0%;
+  transform: translate(-50%, -50%);
+}
