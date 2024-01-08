@@ -1,4 +1,7 @@
-import React from 'react'
+"use client"
+import React from 'react';
+import Image from "next/image";
+import ketut from '../img/pexels-ketut-subiyanto-4720831.jpg'
 
 export default function Companies() {
   return (
@@ -27,6 +30,17 @@ export default function Companies() {
           </div>
         </div>
       </div>
+
+        <div className="max-w-6xl mx-auto mt-10">
+
+            <div className="relative">
+                <div className='w-1/2'>
+                    <Image src={ketut} className='' />
+                </div>
+            </div>
+
+            {/* Second child will be added here.... */}
+        </div>
 
     </div>
   )
