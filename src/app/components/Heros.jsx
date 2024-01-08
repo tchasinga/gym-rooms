@@ -55,7 +55,6 @@ export default function Heros() {
             </div>
           </div>
         </div>
-
         <div className="relative">
           <div className="myImgD">
             <Image src={TwoImg} className="codign" />
@@ -64,7 +63,12 @@ export default function Heros() {
               <h1 className="text-xl font-bold">Join our teams</h1>
               <p className="text-xs text-gray-500">Change your body trainning..</p>
             </div>
-            
+              <div className="w-32 h-32 mycircle absolute bg-black top-[3%] left-[-13%]">
+                 <div className="flex flex-col items-center justify-center mt-12 -rotate-45 ">
+                 <h1 className="text-lg font-bold">500$</h1>
+                 <p className="text-xs text-gray-500">Pay now</p>
+                 </div>
+              </div>
         </div>
       </div>
     </div>

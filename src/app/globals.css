@@ -74,3 +74,7 @@ section {
   height: 150%;
   object-fit: cover;
 }
+
+.mycircle{
+  clip-path: circle(50% at 50% 50%);
+}
