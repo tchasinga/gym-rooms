@@ -4,6 +4,7 @@ import { IoFitness } from "react-icons/io5";
 import Link from "next/link";
 import { motion } from 'framer-motion';
 import 'animate.css';
+import Heros from "./Heros";
 // import { connect }  from 'react-redux';
 
 export default function Navbar() {
@@ -103,6 +104,9 @@ export default function Navbar() {
           </motion.ul>
         </div>
       </div>
+      <section className="max-w-6xl mx-auto p-3 text-white">
+       <Heros />
+      </section>
     </nav>
   );
 }
