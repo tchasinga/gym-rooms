@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center max-w-6xl mx-auto p-5">
         <div className="flex gap-2 items-center">
           <IoFitness className="text-3xl text-slate-900" />
           <h1>Fitness room</h1>

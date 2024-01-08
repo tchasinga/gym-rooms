@@ -23,3 +23,7 @@ ul .myli:hover {
   background-color: rgba(0, 0, 0, 0.593);
   backdrop-filter: blur(5px);
 }
+
+nav{
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+}
