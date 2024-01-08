@@ -41,7 +41,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center max-w-6xl mx-auto p-5">
         <div className="flex gap-2 items-center">
           <IoFitness className="text-3xl text-slate-900 mytext" />
-          <h1>Fitness room</h1>
+          <h1 className="text-2xl font-bold text-gray-200">Fitness room</h1>
         </div>
 
         <div className="md:block hidden">
@@ -58,11 +58,11 @@ export default function Navbar() {
           whileTap={[{ scale: 1.3 }, { rotate: 180 }, { duration: 4.5 }]}
           className={`z-[999] ${
             isOpen ? "text-gray-200" : "text-gray-300"
-          } md:hidden text-2xl`}
+          } md:hidden text-2xl `}
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
-            className="w-6 h-6 text-slate-900 myTrabs"
+            className="w-8 h-8  text-slate-200 myTrabs"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
