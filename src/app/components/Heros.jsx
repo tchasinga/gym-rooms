@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import OneImg from '../img/pexels-pikx-by-panther-1547248.jpg'
+import { FaVideo } from "react-icons/fa";
 
 export default function Heros() {
   return (
@@ -17,10 +18,18 @@ export default function Heros() {
             <p>And mind through the power of fitness</p>
         </div>
         
-        <div className="">
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-5'>
-                Get Started
-            </button>
+        <div className="flex items-center gap-2 mt-3">
+           <div className="">
+              <button className="bg-red-900 hover:bg-blue-900 duration-700 text-white font-normal py-2 px-8 rounded-full">Get stared</button>
+           </div>
+
+           <div className=" flex items-center gap-2">
+            <div className="bg-slate-600 w-12 p-4 flex justify-center items-center rounded-3xl">
+             <FaVideo/> 
+             </div>
+             <p className='text-gray-600 font-normal text-sm'>Watch Video</p>
+           </div>
+
         </div>
     </div>
   )
