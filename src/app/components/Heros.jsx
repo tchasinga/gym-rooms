@@ -1,10 +1,16 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
 import OneImg from "../img/pexels-pikx-by-panther-1547248.jpg";
 import TwoImg from "../img/pexels-mike-jones.png";
 import { FaVideo } from "react-icons/fa";
+import { useState } from "react";
 
 export default function Heros() {
+
+    const [showVideo, setShowVideo] = useState(false);
+
   return (
     <div className="mt-8 flex flex-col jus">
       <div className="flex justify-between">
