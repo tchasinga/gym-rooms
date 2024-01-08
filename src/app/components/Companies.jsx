@@ -32,9 +32,9 @@ export default function Companies() {
         </div>
       </div>
 
-        <div className="max-w-6xl mx-auto mt-7 flex justify-center Success">
+        <div className="max-w-6xl mx-auto mt-28 flex ">
 
-            <div className="relative  w-2/3 flex-1">
+            <div className="relative  w-2/3 flex-1 ">
                 <div className='myWidth rounded-2xl'>
                     <Image src={ketut} className='rounded-2xl border' />
                 </div>
