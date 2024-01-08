@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { IoFitness } from "react-icons/io5";
 import Link from "next/link";
 import { motion } from 'framer-motion';
+import 'animate.css';
 // import { connect }  from 'react-redux';
 
 export default function Navbar() {
@@ -40,7 +41,7 @@ export default function Navbar() {
     <nav>
       <div className="flex justify-between items-center max-w-6xl mx-auto p-5">
         <div className="flex gap-2 items-center">
-          <IoFitness className="text-3xl text-slate-900 mytext" />
+          <IoFitness className="text-4xl text-slate-900 mytext animate__bounceIn animate__animated" />
           <h1 className="text-2xl font-bold text-gray-200">Fitness room</h1>
         </div>
 
