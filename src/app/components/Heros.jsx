@@ -18,7 +18,7 @@ export default function Heros() {
             <p>And mind through the power of fitness</p>
         </div>
         
-        <div className="flex items-center gap-2 mt-3">
+        <div className="flex items-center gap-2 mt-7">
            <div className="">
               <button className="bg-red-900 hover:bg-blue-900 duration-700 text-white font-normal py-2 px-8 rounded-full">Get stared</button>
            </div>
@@ -29,7 +29,23 @@ export default function Heros() {
              </div>
              <p className='text-gray-600 font-normal text-sm'>Watch Video</p>
            </div>
-           
+        </div>
+
+        <div className="flex gap-3 text-center mt-10">
+            <div className='border-r-2 pr-4'>
+                <h1 className='text-xl font-bold'>305+</h1>
+                <p className='text-xs text-gray-500'>Expert Trainers</p>
+            </div>
+
+            <div className='border-r-2 pr-4'>
+                <h1 className='text-xl font-bold'>905+</h1>
+                <p className='text-xs text-gray-500'>Member Joined</p>
+            </div>
+
+            <div className='border-r-2 pr-4'>
+                <h1 className='text-xl font-bold'>700+</h1>
+                <p className='text-xs text-gray-500'>Fitness Programs</p>
+            </div>
         </div>
     </div>
   )
