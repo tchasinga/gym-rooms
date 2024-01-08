@@ -25,5 +25,6 @@ ul .myli:hover {
 }
 
 nav{
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  background: linear-gradient(880deg, #70708b, #ccf7f4 , #c9def4, #1c567f97);
+  backdrop-filter: blur(5px);
 }
