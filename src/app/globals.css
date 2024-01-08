@@ -25,6 +25,10 @@ ul .myli:hover {
 }
 
 nav{
-  background: linear-gradient(880deg, #70708b, #ccf7f4 , #c9def4, #1c567f97);
+  background: linear-gradient(880deg, #211922, #3a3b3c);
   backdrop-filter: blur(5px);
+}
+
+.mytext{
+  color: #920308;
 }
