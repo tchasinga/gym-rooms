@@ -43,7 +43,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center max-w-6xl mx-auto p-5">
         <div className="flex gap-2 items-center">
           <IoFitness className="text-4xl text-slate-900 mytext animate__bounceIn animate__animated" />
-          <h1 className="text-2xl font-bold text-gray-200">Fitness room</h1>
+          <h1 className="text-2xl font-bold text-gray-100">Fitness room</h1>
         </div>
 
         <div className="md:block hidden">

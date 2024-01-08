@@ -27,7 +27,7 @@ ul .myli:hover {
 }
 
 nav{
-  background: linear-gradient(880deg, #211922, #3a3b3c);
+  background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(5px);
 }
 
@@ -45,4 +45,18 @@ nav{
 
 section{
   height: 100vh;
+}
+
+.myImgGet{
+  height: 50px;
+  width: 200px;
+  object-fit: fill;
+  border-radius: 100px;
+  transition: all 0.5s ease;
+}
+
+.myImgGet:hover{
+  transform: scale(1.2);
+  overflow: none !important;
+  filter: brightness(130%);
 }
