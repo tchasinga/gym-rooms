@@ -29,7 +29,7 @@ export default function Heros() {
              </div>
              <p className='text-gray-600 font-normal text-sm'>Watch Video</p>
            </div>
-
+           
         </div>
     </div>
   )
