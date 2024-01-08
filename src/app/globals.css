@@ -57,6 +57,12 @@ section {
   height: 100vh;
 }
 
+section:nth-child(1){
+  background: #38393d;
+  backdrop-filter: blur(5px);
+}
+
+
 .myImgGet {
   height: 50px;
   width: 200px;
@@ -84,4 +90,8 @@ section {
 
 .mycircle{
   clip-path: circle(50% at 50% 50%);
+}
+
+.myback{
+  background: #35363a;
 }
