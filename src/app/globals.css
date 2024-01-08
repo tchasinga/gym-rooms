@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
 .myli:nth-child(1) {
   color: #770012;
 }
@@ -10,7 +15,6 @@
   transition: all 0.5s ease;
   color: white;
 }
-
 
 ul .myli:hover {
   color: #770012;
@@ -26,14 +30,13 @@ ul .myli:hover {
   backdrop-filter: blur(5px);
 }
 
-nav{
+nav {
   background: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(5px);
 }
 
-.mytext{
+.mytext {
   color: #920308;
- 
 }
 
 /* .animate__bounceIn{
@@ -43,11 +46,11 @@ nav{
   animation-duration: 9.5s;
 } */
 
-section{
+section {
   height: 100vh;
 }
 
-.myImgGet{
+.myImgGet {
   height: 50px;
   width: 200px;
   object-fit: cover;
@@ -55,8 +58,19 @@ section{
   transition: all 0.5s ease;
 }
 
-.myImgGet:hover{
+.myImgGet:hover {
   transform: scale(1.2);
   overflow: none !important;
   filter: brightness(130%);
+}
+.myImgD {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.myImgD .codign{
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
 }
