@@ -3,7 +3,7 @@ import { GiCheckMark } from "react-icons/gi";
 
 export default function Healthstate() {
   return (
-    <div className='max-w-6xl mx-auto pt-10'>
+    <div className='max-w-6xl mx-auto pt-10 '>
 
        <div className='flex-col flex'>
            <div className="text-2xl font-bold text-white">
@@ -59,6 +59,13 @@ export default function Healthstate() {
        </div>
 
        {/* this will be a new programming side of code...*/}
+
+        <div className="relative mt-3">
+            <div className='need w-96 h-80'>
+              
+            </div>
+        </div>
+
     </div>
   )
 }
