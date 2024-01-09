@@ -69,7 +69,8 @@ section:nth-child(1){
 
 .myfirstgrid{
   display: grid;
-  grid-template-columns: repeat(autofit, minmax(190px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 5px;
 }
 
 

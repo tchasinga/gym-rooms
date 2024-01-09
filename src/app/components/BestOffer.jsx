@@ -18,7 +18,7 @@ export default function BestOffer() {
          </div>
       </div>
 
-      <div className='myfirstgrid'>
+      <div className=''>
         <div className=' mt-10 myfirstgrid'>
           {myObject.map((item, index) => {
             return (
