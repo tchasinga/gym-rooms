@@ -18,7 +18,7 @@ export default function BestOffer() {
          </div>
       </div>
 
-      <div className=''>
+      <div className='myfirstgrid'>
         <div className=' mt-10 myfirstgrid'>
           {myObject.map((item, index) => {
             return (
@@ -28,6 +28,12 @@ export default function BestOffer() {
                 </div>
                 <div className=''>
                   <h1 className='text-white text-1xl font-bold'>{item.title}</h1>
+                </div>
+                <div className='text-slate-500 text-sm font-normal'>
+                  <p>{item.text}</p>
+                  </div>
+                <div className="">
+                  <h1 className='text-slate-400 text-xs font-normal'>{item.learn}</h1>
                 </div>
               </div>
             )
