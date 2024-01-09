@@ -10,7 +10,11 @@ export default function Home() {
        <section>
          <Companies />  
        </section>
+
+       <section className=''>
        <BestOffer />
+       </section>
+      
     </main>
   )
 }
