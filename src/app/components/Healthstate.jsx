@@ -7,7 +7,7 @@ import { GiBurningEye } from "react-icons/gi";
 
 export default function Healthstate() {
   return (
-    <div className='max-w-6xl mx-auto pt-10 flex justify-between items-center'>
+    <div className='max-w-6xl mx-auto pt-[10%] flex justify-between items-center'>
 
        <div className='flex-col flex'>
            <div className="text-2xl font-bold text-white">
