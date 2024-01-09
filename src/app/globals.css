@@ -76,6 +76,7 @@ section:nth-child(1){
 .bgColor{
   background: #434343;
   transition: all 2.5s ease;
+  cursor: pointer;
 }
 
 .bgColor:hover{
