@@ -4,7 +4,7 @@ import { myObject } from '../projects/mygridsysten'
 
 export default function BestOffer() {
   return (
-    <div className='max-w-6xl mx-auto pt-10 w-full'>
+    <div className='max-w-6xl mx-auto pt-10 w-full pb-10'>
 
       <div className="flex justify-between items-center">
         <div className="text-3xl font-bold text-white">
@@ -19,7 +19,7 @@ export default function BestOffer() {
       </div>
 
       <div className=''>
-        <div className=' mt-10 myfirstgrid'>
+        <div className=' mt-10 myfirstgrid '>
           {myObject.map((item, index) => {
             return (
               <div key={index} className='flex-col flex bgColor p-5 rounded-lg'>
@@ -34,7 +34,7 @@ export default function BestOffer() {
                   </div>
                 <div className="flex items-center gap-2">
                   <h1 className='text-slate-400 text-xs font-normal'>{item.learn}</h1>
-                  <p className='text-2xl'>{item.arrow}</p>
+                  <p className='text-2xl text-slate-400'>{item.arrow}</p>
                 </div>
               </div>
             )
