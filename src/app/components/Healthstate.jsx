@@ -2,6 +2,8 @@ import React from 'react'
 import { GiCheckMark } from "react-icons/gi";
 import mitImg from '../img/pexels-monstera.png'
 import Image from 'next/image'
+import { IoFitness } from "react-icons/io5";
+import { GiBurningEye } from "react-icons/gi";
 
 export default function Healthstate() {
   return (
@@ -68,6 +70,21 @@ export default function Healthstate() {
             <div className="absolute top-[0] left-[-22%] border-b-2 mywith">
             <Image src={mitImg} alt="" className='object-cover rounded-xl'/>
             </div>
+            <div className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[23%] left-[69%]'>
+                    <IoFitness className='h-8 w-8 text-red-800'/>
+                    <div className='flex flex-col'>
+                    <p className='text-sm font-bold'>80 bpm</p>
+                    <p className='text-xs'>Heart rate good..</p>
+                </div>
+             </div>
+
+             <div className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[65%] right-[69%]'>
+                    <GiBurningEye className='h-8 w-8 text-red-800'/>
+                    <div className='flex flex-col'>
+                    <p className='text-sm font-bold'>50 %</p>
+                    <p className='text-xs'>Flat burning</p>
+                </div>
+             </div>
         </div>
 
     </div>
