@@ -62,7 +62,9 @@ section:nth-child(1){
   backdrop-filter: blur(5px);
 }
 
-
+.NewCodeIsnow{
+  height: 50vh;
+}
 
 .myImgGet {
   height: 50px;
