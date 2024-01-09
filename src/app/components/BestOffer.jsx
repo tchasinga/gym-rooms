@@ -11,7 +11,7 @@ export default function BestOffer() {
           <h1>The Best programs we <br /> Offers for you</h1>          
         </div>
          
-         <div className="text-slate-500 text-sm font-normal">
+         <div className="text-slate-200 text-sm font-medium">
           <p>We offer a wide range of comprehensive fitness programs</p>
           <p>Designed to coter to individuals of all fitness levels our aim</p>
           <p>To help your achieve specific goals & maximize results</p>
