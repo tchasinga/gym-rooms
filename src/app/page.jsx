@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Companies from './components/Companies'
 import BestOffer from './components/BestOffer'
+import Healthstate from './components/Healthstate'
 
 
 export default function Home() {
@@ -14,6 +15,10 @@ export default function Home() {
        <div className='NewCodeIsnow '>
        <BestOffer />
        </div>
+
+       <section className='Healthstate'>
+        <Healthstate />
+       </section>
       
     </main>
   )

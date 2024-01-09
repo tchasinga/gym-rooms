@@ -133,3 +133,7 @@ section:nth-child(1){
   left: 50%;
   transform: translate(-64%, 20%);
 }
+
+.Healthstate{
+  background-color: #38393D; 
+}
