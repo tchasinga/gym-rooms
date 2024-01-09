@@ -18,46 +18,10 @@ export default function BestOffer() {
 
       <div className='myfirstgrid'>
         
-        <div className='myfirstgrid__item'>
-          <div className='myfirstgrid__item__img'>
-            <img src='/images/BestOffer/1.png' alt='1' />
-          </div>
-          <div className='myfirstgrid__item__text'>
-            <h1 className='text-3xl font-bold text-white'>Weight Loss</h1>
-            <p className='text-slate-500 text-sm font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </div>
+        
 
-        <div className='myfirstgrid__item'>
-          <div className='myfirstgrid__item__img'>
-            <img src='/images/BestOffer/2.png' alt='2' />
-          </div>
-          <div className='myfirstgrid__item__text'>
-            <h1 className='text-3xl font-bold text-white'>Weight Loss</h1>
-            <p className='text-slate-500 text-sm font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </div>
+      </div>
 
-        <div className='myfirstgrid__item'>
-          <div className='myfirstgrid__item__img'>
-            <img src='/images/BestOffer/3.png' alt='3' />
-          </div>
-          <div className='myfirstgrid__item__text'>
-            <h1 className='text-3xl font-bold text-white'>Weight Loss</h1>
-            <p className='text-slate-500 text-sm font-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </div>
-
-            <div className='myfirstgrid__item'>
-              <div className='myfirstgrid__item__img'>
-                <img src='/images/BestOffer/4.png' alt='4' />
-              </div>
-              <div className='myfirstgrid__item__text'>
-                <h1 className='text-3xl font-bold text-white'>Weight Loss</h1>
-              </div>
-            </div>
-          </div>
-
-          </div>
+  </div>
   )
 }
