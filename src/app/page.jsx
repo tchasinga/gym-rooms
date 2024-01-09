@@ -11,7 +11,7 @@ export default function Home() {
          <Companies />  
        </section>
 
-       <section className='NewCodeIsnow'>
+       <section className='NewCodeIsnow '>
        <BestOffer />
        </section>
       
