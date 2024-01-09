@@ -93,6 +93,18 @@ section:nth-child(1){
 
 .need{
   background: #F4622C;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.w-96{
+  width: 20rem;
+  height: 20rem;
+}
+
+.mywith{
+  width: 150%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .myImgGet {

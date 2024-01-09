@@ -1,9 +1,11 @@
 import React from 'react'
 import { GiCheckMark } from "react-icons/gi";
+import mitImg from '../img/pexels-monstera.png'
+import Image from 'next/image'
 
 export default function Healthstate() {
   return (
-    <div className='max-w-6xl mx-auto pt-10 '>
+    <div className='max-w-6xl mx-auto pt-10 flex justify-between items-center'>
 
        <div className='flex-col flex'>
            <div className="text-2xl font-bold text-white">
@@ -60,9 +62,11 @@ export default function Healthstate() {
 
        {/* this will be a new programming side of code...*/}
 
-        <div className="relative mt-3">
-            <div className='need w-96 h-80'>
-              
+        <div className="relative mt-10">
+            <div className='need  w-96'>
+            </div> 
+            <div className="absolute top-[0] left-[-22%] border-b-2 mywith">
+            <Image src={mitImg} alt="" className='object-cover rounded-xl'/>
             </div>
         </div>
 
