@@ -34,7 +34,7 @@ export default function BestOffer() {
                   </div>
                 <div className="flex items-center gap-2">
                   <h1 className='text-slate-400 text-xs font-normal'>{item.learn}</h1>
-                  <p className='text-2xl text-slate-400'>{item.arrow}</p>
+                  <p className='text-2xl text-slate-400 animate__fadeInLeft animate__animated'>{item.arrow}</p>
                 </div>
               </div>
             )
