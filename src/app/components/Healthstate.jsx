@@ -57,7 +57,7 @@ export default function Healthstate() {
                 </div>
             </div>
 
-            <div className="p-2 bg-red-900 text-white font-semibold text-sm w-32 text-center mt-5 rounded-2xl">
+            <div className="p-2 bg-red-900 text-white font-semibold text-sm w-32 text-center mt-5 rounded-2xl animate__shakeX animate__animated">
                 Join today
             </div>
        </div>
