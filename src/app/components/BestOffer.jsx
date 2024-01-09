@@ -1,4 +1,6 @@
+"use client"
 import React from 'react'
+import { myObject } from '../projects/mygridsysten'
 
 export default function BestOffer() {
   return (
@@ -16,10 +18,21 @@ export default function BestOffer() {
          </div>
       </div>
 
-      <div className='myfirstgrid'>
-        
-        
-
+      <div className=''>
+        <div className=' mt-10 myfirstgrid'>
+          {myObject.map((item, index) => {
+            return (
+              <div key={index} className=''>
+                <div className='text-5xl'>
+                  {item.icon}
+                </div>
+                <div className=''>
+                  <h1 className='text-white text-1xl font-bold'>{item.title}</h1>
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </div>
 
   </div>
