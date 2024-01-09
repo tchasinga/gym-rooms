@@ -43,7 +43,7 @@ nav {
   animation-iteration-count: infinite;
   animation-delay: 7s;
   --animate-duration: 7.5s;
-  animation-duration: 9.5s;
+  animation-duration: 9.5s; 
 } */
 
 .animate__swing{
@@ -51,6 +51,21 @@ nav {
   animation-delay: 7s;
   --animate-duration: 2.5s;
   animation-duration: 2.5s;
+}
+
+.animate__shakeX{
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  --animate-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.animate__fadeInLeft{
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+  --animate-duration: 2.5s;
+  animation-duration: 2.5s;
+
 }
 
 section {
@@ -62,6 +77,42 @@ section:nth-child(1){
   backdrop-filter: blur(5px);
 }
 
+.NewCodeIsnow{
+  width: 100%;
+  background: #35363A;
+}
+
+.myfirstgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
+
+.bgColor{
+  background: #434343;
+  transition: all 2.5s ease;
+  cursor: pointer;
+}
+
+.bgColor:hover{
+  background: #F4622C;
+}
+
+.need{
+  background: #F4622C;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.w-96{
+  width: 20rem;
+  height: 20rem;
+}
+
+.mywith{
+  width: 150%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .myImgGet {
   height: 50px;
@@ -112,4 +163,8 @@ section:nth-child(1){
   top: 50%;
   left: 50%;
   transform: translate(-64%, 20%);
+}
+
+.Healthstate{
+  background-color: #38393D; 
 }
