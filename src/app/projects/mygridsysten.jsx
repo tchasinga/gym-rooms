@@ -23,7 +23,7 @@ export const myObject = [
     {
         icon: <GiEnergyArrow />,
         title: "Energy Training",
-        text: "For those looking to increase strength build lean muscle , our strength & muscle",
+        text: "For those looking to increase strength build lean muscle , our strength & muscle program is for you",
         learn : 'Learn More',
         arrow : <IoIosArrowRoundForward />
     },
