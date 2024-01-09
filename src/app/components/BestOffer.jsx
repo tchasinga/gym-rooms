@@ -22,14 +22,14 @@ export default function BestOffer() {
         <div className=' mt-10 myfirstgrid'>
           {myObject.map((item, index) => {
             return (
-              <div key={index} className='flex-col flex'>
+              <div key={index} className='flex-col flex bgColor p-5 rounded-lg'>
                 <div className='text-5xl py-1 text-white'>
                   {item.icon}
                 </div>
                 <div className='py-1'>
                   <h1 className='text-white text-1xl font-bold'>{item.title}</h1>
                 </div>
-                <div className='text-slate-500 text-sm font-normal py-1'>
+                <div className='text-slate-100 text-xs font-normal py-1 '>
                   <p>{item.text}</p>
                   </div>
                 <div className="flex items-center gap-2">

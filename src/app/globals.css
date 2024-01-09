@@ -73,7 +73,10 @@ section:nth-child(1){
   grid-gap: 10px;
 }
 
+.bgColor{
+  background: #434343;
 
+}
 
 .myImgGet {
   height: 50px;
