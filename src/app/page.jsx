@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Companies from './components/Companies'
 import BestOffer from './components/BestOffer'
 import Healthstate from './components/Healthstate'
+import Bestplan from './components/Bestplan'
 
 
 export default function Home() {
@@ -19,6 +20,10 @@ export default function Home() {
        <section className='Healthstate'>
         <Healthstate />
        </section>
+
+        <section className='mynewone'>
+          <Bestplan />
+        </section>
       
     </main>
   )
