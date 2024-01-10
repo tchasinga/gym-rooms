@@ -21,9 +21,9 @@ export default function Home() {
         <Healthstate />
        </section>
 
-        <section className='mynewone'>
+        <div className='mynewone'>
           <Bestplan />
-        </section>
+        </div>
       
     </main>
   )

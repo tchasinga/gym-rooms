@@ -100,6 +100,7 @@ section:nth-child(1){
 .myRED{
   background: #434343;
   transition: all 2.5s ease;
+  cursor: pointer;
 }
 
 .myRED:hover{

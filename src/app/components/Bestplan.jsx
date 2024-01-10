@@ -125,6 +125,10 @@ export default function Bestplan() {
 
                 </div> 
         </div>
+
+        {/* Adding new code estate */}
+
+        <div className=""></div>
     </div>
   )
 }
