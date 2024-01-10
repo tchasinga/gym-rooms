@@ -149,7 +149,7 @@ export default function Bestplan() {
                     <p>and they really help to reach fitnes goals</p>
                 </div>
 
-                <div className="container mt-10 border">
+                <div className="container mt-5  w-80">
                     <Image src={IMmomko} alt="Picture of the author"  className='avatar'/>
                     <Image src={ImMib} alt="Picture of the author" className='avatar'/>
                         <Image src={ImMib2} alt="Picture of the author" className='avatar'/>

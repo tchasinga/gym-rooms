@@ -189,8 +189,8 @@ section:nth-child(1){
 }
 
 .avatar{
-  width: 100px;
-  height: 100px;
+  width:  90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid white;
@@ -213,4 +213,5 @@ section:nth-child(1){
  filter: blur(0px);
  box-shadow: 2px 2px 20px #333;
  top: -22.5px;
+ transform: scale(1.6);
 }
