@@ -215,3 +215,72 @@ section:nth-child(1){
  top: -22.5px;
  transform: scale(1.6);
 }
+
+
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+/* 
+.swiper-slide {
+  display: flex;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+} */
+/* 
+.swiper-slide:nth-child(1n) {
+  background-image: url('./pics/free-photo-of-young-beautiful-woman-sitting-on-city-street.jpeg');
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-image: url('./pics/pexels-photo-1153369.webp');
+  background-size: 240px 320px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-image: url('./pics/pexels2-photo-6740525.jpeg');
+  background-size: 240px 320px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-image: url('./pics/pexels3-photo-8874386.webp');
+  background-size: 240px 320px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide:nth-child(5n) {
+  background-image: url('./pics/pexels4-photo-1089164.webp');
+  background-size: 240px 320px;
+  object-fit: fill;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+} */
