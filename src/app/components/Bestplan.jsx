@@ -1,4 +1,5 @@
 import React from 'react'
+// import { GiCheckMark } from 'react-icons/gi'
 
 export default function Bestplan() {
   return (
@@ -9,9 +10,11 @@ export default function Bestplan() {
          </div>
 
         <div className="">
-            
+            <div className="flex justify-between items-center mt-10">
+                <div className="bg-red-900 w-1/4 p-5 rounded-lg">
+                </div>
+                </div> 
         </div>
-
     </div>
   )
 }
