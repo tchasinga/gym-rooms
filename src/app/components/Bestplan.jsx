@@ -147,7 +147,7 @@ export default function Bestplan() {
         </div>
       </div>
 
-      {/* Adding new code estat*/}
+      {/* Adding new code esta*/}
 
       <div className="pt-10 pb-10 flex justify-between items-center">
         <div className="flex flex-col">
