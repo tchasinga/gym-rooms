@@ -76,6 +76,10 @@ section:nth-child(1){
   backdrop-filter: blur(5px);
 }
 
+.mynewone{
+  background: #38393d;
+}
+
 .NewCodeIsnow{
   width: 100%;
   background: #35363A;
