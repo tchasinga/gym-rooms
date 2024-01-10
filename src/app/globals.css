@@ -97,6 +97,15 @@ section:nth-child(1){
   cursor: pointer;
 }
 
+.myRED{
+  background: #434343;
+  transition: all 2.5s ease;
+}
+
+.myRED:hover{
+  background: #F4622C;
+}
+
 .bgColor:hover{
   background: #F4622C;
 }

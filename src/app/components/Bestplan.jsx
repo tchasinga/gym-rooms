@@ -12,7 +12,7 @@ export default function Bestplan() {
         <div className="">
             <div className="flex items-center mt-10 justify-center gap-5">
                 
-                <div className="bg-red-900 w-1/4 h-80 rounded-lg p-5 flex flex-col text-center">
+            <div className="bg-red-900 myRED w-1/4 h-80 rounded-xl p-5 flex flex-col text-center">
                 <h3 className='uppercase font-light text-xs text-slate-200'>discover</h3>
                     <div className="flex items-center gap-1 text-white pt-3 pb-3 justify-center">
                         <h2 className='font-bold text-2xl'>$99</h2>
@@ -48,7 +48,7 @@ export default function Bestplan() {
                     </div>
                 </div>
 
-                <div className="bg-red-900 w-1/4 h-[370px] rounded-lg p-5 flex flex-col text-center">
+                <div className="bg-red-900 myRED w-1/4 h-[380px] rounded-xl p-5 flex flex-col text-center">
                 <h3 className='uppercase font-light text-xs text-slate-200'>discover</h3>
                     <div className="flex items-center gap-1 text-white pt-3 pb-3 justify-center">
                         <h2 className='font-bold text-2xl'>$299</h2>
@@ -89,8 +89,8 @@ export default function Bestplan() {
                 </div>
 
 
-                <div className="bg-red-900 w-1/4 h-80 rounded-lg p-5 flex flex-col text-center">
-                    <h3 className='uppercase font-light text-sm text-slate-200'>discover</h3>
+                <div className="bg-red-900 myRED w-1/4 h-80 rounded-xl p-5 flex flex-col text-center">
+                   <h3 className='uppercase font-light text-xs text-slate-200'>discover</h3>
                     <div className="flex items-center gap-1 text-white pt-3 pb-3 justify-center">
                         <h2 className='font-bold text-2xl'>$99</h2>
                         <p className='text-xs text-gray-400'>/Per Month</p>
