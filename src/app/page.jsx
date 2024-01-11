@@ -17,6 +17,11 @@ export default function Home() {
        <div className='NewCodeIsnow '>
        <BestOffer />
        </div>
+
+       <section className='Healthstate'>
+        <Healthstate />
+       </section>
+
     </main>
   )
 }
