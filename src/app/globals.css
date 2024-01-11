@@ -156,3 +156,7 @@ section:nth-child(1){
   height: 150%;
   object-fit: cover;
 }
+
+.mycircle{
+  clip-path: circle(50% at 50% 50%);
+}
