@@ -359,6 +359,10 @@ section:nth-child(1){
   .healthState{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .Healthstate{
@@ -393,10 +397,15 @@ section:nth-child(1){
     justify-content: center;
   }
 
-  .mobileImg{
-    width: 100%;
-    object-fit: cover;
+  .mygeneral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
   }
+
 }
 
 

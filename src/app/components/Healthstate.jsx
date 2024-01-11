@@ -64,14 +64,14 @@ export default function Healthstate() {
 
        {/* this will be a new programming side of code...*/}
 
-        <div className="relative mt-10">
-            <div className='need  w-96'>
+        <div className="relative mt-10  mygeneral">
+            <div className='need  w-96 border'>
             </div> 
-            <div className="absolute top-[0] left-[-22%]  mywith">
-            <Image src={mitImg} alt="" className='object-cover rounded-xl mobileImg'/>
+            <div className="absolute top-[0] left-[-22%]  mywith ">
+            <Image src={mitImg} alt="" className='object-cover rounded-xl border mymonile'/>
             <hr className='myHraC'/>
             </div>
-            <div className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[23%] left-[69%]'>
+            <div className='flex items-center myblur w-44 py-2 px-1 gap-3 border rounded-2xl absolute top-[23%] left-[69%]'>
                     <IoFitness className='h-8 w-8 text-red-800'/>
                     <div className='flex flex-col'>
                     <p className='text-sm font-bold'>80 bpm</p>
@@ -79,7 +79,7 @@ export default function Healthstate() {
                 </div>
              </div>
 
-             <div className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[65%] right-[69%]'>
+             <div className='flex items-center myblur w-44 py-2 px-1 gap-3 border rounded-2xl absolute top-[65%] right-[69%]'>
                     <GiBurningEye className='h-8 w-8 text-red-800'/>
                     <div className='flex flex-col'>
                     <p className='text-sm font-bold'>50 %</p>
