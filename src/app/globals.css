@@ -130,3 +130,11 @@ section:nth-child(1){
   height: 100%;
   object-fit: cover;
 }
+
+.myImgGet {
+  height: 50px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+  transition: all 0.5s ease;
+}
