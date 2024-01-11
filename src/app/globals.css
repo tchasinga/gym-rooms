@@ -138,3 +138,9 @@ section:nth-child(1){
   border-radius: 100px;
   transition: all 0.5s ease;
 }
+
+.myImgGet:hover {
+  transform: scale(1.2);
+  overflow: none !important;
+  filter: brightness(130%);
+}
