@@ -103,6 +103,10 @@ section:nth-child(1){
   cursor: pointer;
 }
 
+.MyFooter{
+  background: #38393D;
+}
+
 .myRED:hover{
   background: #F4622C;
 }
@@ -168,7 +172,6 @@ section:nth-child(1){
 .myWidth{
   max-width: 80%;
   object-fit: contain;
-  /* height: 100px; */
 }
 
 .Success{
