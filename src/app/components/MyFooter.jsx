@@ -6,7 +6,7 @@ import { IoFitness } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
 
-// 
+// e
 
 export default function MyFooter() {
   return (
