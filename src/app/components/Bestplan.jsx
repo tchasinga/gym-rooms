@@ -29,7 +29,7 @@ export default function Bestplan() {
       </div>
 
       <div className="">
-        <div className="flex items-center mt-10 justify-center gap-5">
+        <div className="flex flex-wrap items-center mt-10 justify-center gap-5">
           <div className="bg-red-900 myRED w-1/4 h-80 rounded-xl p-5 flex flex-col text-center">
             <h3 className="uppercase font-light text-xs text-slate-200">
               discover
