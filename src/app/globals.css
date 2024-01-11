@@ -119,3 +119,8 @@ section:nth-child(1){
   background: #F4622C;
   clip-path: circle(50% at 50% 50%);
 }
+
+.w-96{
+  width: 20rem;
+  height: 20rem;
+}
