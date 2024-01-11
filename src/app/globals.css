@@ -150,3 +150,9 @@ section:nth-child(1){
   width: 100%;
   object-fit: cover;
 }
+
+.myImgD .codign{
+  width: 150%;
+  height: 150%;
+  object-fit: cover;
+}
