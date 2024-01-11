@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  distDir: '.next',
     webpack: (config, { isServer }) => {
       // Add file-loader rule for MP4 files
       config.module.rules.push({
