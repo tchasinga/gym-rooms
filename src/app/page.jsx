@@ -10,25 +10,9 @@ import MyFooter from './components/MyFooter'
 export default function Home() {
   return (
     <main className="">
-       {/* <section>
+       <section className='addingFlexHeigh'>
          <Companies />  
        </section>
-
-       <div className='NewCodeIsnow '>
-       <BestOffer />
-       </div>
-
-       <section className='Healthstate'>
-        <Healthstate />
-       </section>
-
-        <div className='mynewone'>
-          <Bestplan />
-        </div>
-      
-       <div className="MyFooter">
-         <MyFooter />
-       </div> */}
     </main>
   )
 }
