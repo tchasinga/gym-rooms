@@ -186,3 +186,8 @@ section:nth-child(1){
 .Healthstate{
   background-color: #38393D; 
 }
+
+.container{
+  display: flex;
+  gap: 5px;
+}
