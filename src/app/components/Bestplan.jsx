@@ -156,13 +156,13 @@ export default function Bestplan() {
               What our happy Client <br /> Say About us
             </h1>
           </div>
-          <div className="text-sm text-slate-50">
+          <div className=" text-sm text-slate-50">
             <p>I've been a number of fitness within for about 6 month</p>
             <p>Now and i absoulutely love it ! the trainers are motivate</p>
             <p>and they really help to reach fitnes goals</p>
           </div>
 
-          <div className="container mt-5  w-80">
+          <div className="container mt-5  w-80 ">
             <Image
               src={IMmomko}
               alt="Picture of the author"
@@ -204,7 +204,7 @@ export default function Bestplan() {
 
         {/* second one..*/}
 
-        <div className=" w-1/2 mt-5">
+        <div className="  mt-5 ">
           <Swiper
             effect={"cards"}
             grabCursor={true}

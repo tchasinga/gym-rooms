@@ -392,6 +392,11 @@ section:nth-child(1){
     flex-direction:column-reverse; 
     justify-content: center;
   }
+
+  .mobileImg{
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 

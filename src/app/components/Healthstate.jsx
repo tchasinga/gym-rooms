@@ -68,7 +68,7 @@ export default function Healthstate() {
             <div className='need  w-96'>
             </div> 
             <div className="absolute top-[0] left-[-22%]  mywith">
-            <Image src={mitImg} alt="" className='object-cover rounded-xl'/>
+            <Image src={mitImg} alt="" className='object-cover rounded-xl mobileImg'/>
             <hr className='myHraC'/>
             </div>
             <div className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[23%] left-[69%]'>
