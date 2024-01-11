@@ -191,3 +191,15 @@ section:nth-child(1){
   display: flex;
   gap: 5px;
 }
+
+.avatar{
+  width:  90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  transition: all 0.5s ease;
+}
