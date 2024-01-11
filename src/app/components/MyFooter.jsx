@@ -1,7 +1,9 @@
 "use client"
 
 import React from 'react'
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { MdLocationPin } from "react-icons/md";
 
 export default function MyFooter() {
   return (
@@ -41,13 +43,27 @@ export default function MyFooter() {
             <h1 className='text-lg font-medium'>Contact US</h1>
             <div className="flex flex-col gap-2">
 
-              <div className="">
-                 
+              <div className="flex items-center gap-2 cursor-pointer">
+                <FaPhoneAlt  className='text-red-800 text-xl'/>
+               <a href="tel:+250787289028" className=''>
+               <p className='text-sm text-slate-400 cursor-pointer'>(+250)787289028</p>
+               </a>
               </div>
 
-              <p className='text-sm text-slate-400'>Why us</p>
-              <p className='text-sm text-slate-400'>Security</p>
-              <p className='text-sm text-slate-400'>Partnership</p>
+              <div className="flex items-center gap-2 cursor-pointer">
+               <MdEmail  className='text-red-800  text-xl'/>
+               <a href="tchasingajacques@gmail.com" className=''>
+               <p className='text-sm text-slate-400 cursor-pointer'>tchasingajacques@gmail.com</p>
+               </a>
+              </div>
+
+              <div className="flex items-center gap-2 cursor-pointer">
+               <MdLocationPin  className='text-red-800  text-xl'/>
+               <a href="tchasingajacques@gmail.com" className=''>
+                <p className='text-sm text-slate-400 cursor-pointer'>2464 Royal Ln.Mesa <br>New Jersey 45463</br></p>
+               </a>
+              </div>
+
             </div>
           </div>
 
