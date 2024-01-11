@@ -4,6 +4,7 @@ import Companies from './components/Companies'
 import BestOffer from './components/BestOffer'
 import Healthstate from './components/Healthstate'
 import Bestplan from './components/Bestplan'
+import MyFooter from './components/MyFooter'
 
 
 export default function Home() {
@@ -25,6 +26,9 @@ export default function Home() {
           <Bestplan />
         </div>
       
+       <div className="MyFooter">
+         <MyFooter />
+       </div>
     </main>
   )
 }
