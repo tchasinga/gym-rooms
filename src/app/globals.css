@@ -91,7 +91,7 @@ section:nth-child(1){
 
 .myfirstgrid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
 }
 
@@ -262,6 +262,11 @@ section:nth-child(1){
   object-fit: contain;
 }
 
+.addingFlexHeigh{
+  height: 100%;
+  padding-bottom: 10%;
+}
+
 }
 
 /* Adding my mobile version */
@@ -303,11 +308,22 @@ section:nth-child(1){
 
   .addingFlexHeigh{
     height: 100%;
+    padding-bottom: 2%;
   }
 
   .reme{
     width: 100%;
     object-fit: fill;
+  }
+
+  .myblur{
+    position: absolute;
+    left: -1%;
+  }
+
+  .myfirstgrid{
+    width: 90%;
+    margin: 0 auto;
   }
   
 }

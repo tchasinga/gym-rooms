@@ -13,6 +13,10 @@ export default function Home() {
        <section className='addingFlexHeigh'>
          <Companies />  
        </section>
+
+       <div className='NewCodeIsnow '>
+       <BestOffer />
+       </div>
     </main>
   )
 }
