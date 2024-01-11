@@ -29,7 +29,7 @@ export default function Bestplan() {
       </div>
 
       <div className="myElementFlex">
-        <div className="flex flex-wrap items-center mt-10 justify-center gap-5 ">
+        <div className="flex flex-wrap items-center mt-10 justify-center gap-5 AddnewWrap">
           <div className="bg-red-900 myRED W-size h-80 rounded-xl p-5 flex flex-col text-center">
             <h3 className="uppercase font-light text-xs text-slate-200">
               discover
@@ -149,7 +149,7 @@ export default function Bestplan() {
 
       {/* Adding code is  online*/}
 
-      <div className="pt-10 pb-10 flex justify-between items-center">
+      <div className="pt-10 pb-10 flex justify-between items-center wDisney">
         <div className="flex flex-col">
           <div className="text-3xl text-teal-50 font-bold mb-5">
             <h1>

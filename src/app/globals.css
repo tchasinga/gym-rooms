@@ -281,9 +281,16 @@ section:nth-child(1){
 .myElementFlex{
   width: 100%;
   object-fit: cover;
-  border: #ff0000 solid 4px;
 }
 
+.W-size{
+  width: 30%;
+}
+.wDisney{
+  width: 100%;
+  object-fit: cover;
+  padding-left: 5%;
+}
 }
 
 /* Adding my mobile version */
@@ -363,6 +370,27 @@ section:nth-child(1){
     height: 1%;
     width: 70%;
     margin: 0 auto;
+  }
+
+  .W-size{
+    width: 80%;
+  }
+
+  .AddnewWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .wDisney{
+    width: 100%;
+    object-fit: cover;
+    padding-left: 5%;
+    display: flex;
+    flex-direction:column-reverse; 
+    justify-content: center;
   }
 }
 
