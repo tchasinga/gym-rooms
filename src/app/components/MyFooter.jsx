@@ -1,4 +1,7 @@
+"use client"
+
 import React from 'react'
+import { FaPhoneAlt } from "react-icons/fa";
 
 export default function MyFooter() {
   return (
@@ -41,7 +44,7 @@ export default function MyFooter() {
               <div className="">
                  
               </div>
-              
+
               <p className='text-sm text-slate-400'>Why us</p>
               <p className='text-sm text-slate-400'>Security</p>
               <p className='text-sm text-slate-400'>Partnership</p>
