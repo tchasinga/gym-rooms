@@ -7,7 +7,7 @@ import { GiBurningEye } from "react-icons/gi";
 
 export default function Healthstate() {
   return (
-    <div className='max-w-6xl mx-auto pt-[10%] flex justify-between items-center'>
+    <div className='max-w-6xl mx-auto pt-[10%] flex justify-between items-center healthState'>
 
        <div className='flex-col flex'>
            <div className="text-2xl font-bold text-white">
@@ -67,8 +67,9 @@ export default function Healthstate() {
         <div className="relative mt-10">
             <div className='need  w-96'>
             </div> 
-            <div className="absolute top-[0] left-[-22%] border-b-2 mywith">
+            <div className="absolute top-[0] left-[-22%]  mywith">
             <Image src={mitImg} alt="" className='object-cover rounded-xl'/>
+            <hr className='myHraC'/>
             </div>
             <div className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[23%] left-[69%]'>
                     <IoFitness className='h-8 w-8 text-red-800'/>

@@ -22,6 +22,9 @@ export default function Home() {
         <Healthstate />
        </section>
 
+       <div className='mynewone'>
+          <Bestplan />
+        </div>
     </main>
   )
 }
