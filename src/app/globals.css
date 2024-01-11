@@ -207,3 +207,8 @@ section:nth-child(1){
 .avatar:not(:first-child){
   margin-left: -60px;
  }
+
+
+.container:hover > :not(:hover){
+  filter: blur(5px);
+}
