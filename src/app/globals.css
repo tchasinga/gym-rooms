@@ -225,3 +225,19 @@ section:nth-child(1){
   width: 240px;
   height: 320px;
 }
+
+/* my tablet breakpoint is added here  */
+
+@media  screen and (max-width:884px ){
+  .myh1{
+    visibility: none;
+  }
+}
+
+
+/* Adding my  mobile version */
+@media screen and (max-width: 480px ){
+  .myh1{
+    visibility: visible;
+  }
+}

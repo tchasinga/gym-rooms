@@ -10,7 +10,7 @@ import MyFooter from './components/MyFooter'
 export default function Home() {
   return (
     <main className="">
-       <section>
+       {/* <section>
          <Companies />  
        </section>
 
@@ -28,7 +28,7 @@ export default function Home() {
       
        <div className="MyFooter">
          <MyFooter />
-       </div>
+       </div> */}
     </main>
   )
 }
