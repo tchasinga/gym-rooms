@@ -203,3 +203,7 @@ section:nth-child(1){
   top: 0;
   transition: all 0.5s ease;
 }
+
+.avatar:not(:first-child){
+  margin-left: -60px;
+ }
