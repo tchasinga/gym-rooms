@@ -226,18 +226,35 @@ section:nth-child(1){
   height: 320px;
 }
 
-/* my tablet breakpoint is added here  */
 
-@media  screen and (max-width:884px ){
-  .myh1{
-    visibility: none;
+
+
+@media screen and (max-width: 884px) {
+  .myh1 {
+    visibility: hidden;
   }
+
+  .myli:nth-child(3) {
+    display: none;
+  }
+
+.myImgD .codign{
+  width: 150%;
+  height: 190%;
+  object-fit: cover;
 }
 
+}
 
-/* Adding my  mobile version */
-@media screen and (max-width: 480px ){
-  .myh1{
+/* Adding my mobile version */
+@media screen and (max-width: 480px) {
+  .myh1 {
     visibility: visible;
   }
+
+  .myli:nth-child(3) {
+    display: block; 
+  }
 }
+
+
