@@ -160,3 +160,7 @@ section:nth-child(1){
 .mycircle{
   clip-path: circle(50% at 50% 50%);
 }
+
+.myback{
+  background: #35363a;
+}
