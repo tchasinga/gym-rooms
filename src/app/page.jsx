@@ -25,6 +25,10 @@ export default function Home() {
        <div className='mynewone'>
           <Bestplan />
         </div>
+
+        <div className="MyFooter">
+         <MyFooter />
+       </div> 
     </main>
   )
 }

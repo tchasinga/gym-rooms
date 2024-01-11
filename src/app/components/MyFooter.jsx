@@ -11,7 +11,7 @@ import { MdLocationPin } from "react-icons/md";
 export default function MyFooter() {
   return (
     <div className="pt-10 pb-10 max-w-6xl mx-auto">
-      <div className="max-w-6xl mx-auto p-5 items-center justify-evenly flex gap-10 flex-wrap w-full">
+      <div className="max-w-6xl mx-auto p-5 items-center justify-evenly flex gap-10  w-full myfirstgridin">
         <div className="text-white">
           <h1 className="text-lg font-medium pb-2">Company</h1>
           <div className="flex flex-col gap-2">
@@ -78,7 +78,7 @@ export default function MyFooter() {
      
       <div className="relative mx-auto">
       <hr className="w-[82%] max-w-6xl mx-auto text-slate-200" />
-        <div className="flex items-center justify-evenly pt-5 bottom-0 left-0 right-0">
+        <div className="flex items-center justify-evenly pt-5 bottom-0 left-0 right-0 flex-wrap ">
           <div className="flex items-center gap-3">
             <IoFitness className="text-4xl text-slate-900 mytext animate__bounceIn animate__animated" />
             <h1 className="text-lg font-bold text-gray-100">Fitness room</h1>
@@ -86,7 +86,7 @@ export default function MyFooter() {
 
           <div className="">
             <p className="text-sm text-slate-100">
-              @2024 Design by tchasinga balolebwami All Copyrights reservesed
+              @2024 Design by tchasinga balolebwami <span className="myWrap">All Copyrights reservesed</span> 
             </p>
           </div>
 

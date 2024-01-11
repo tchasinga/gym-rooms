@@ -406,6 +406,21 @@ section:nth-child(1){
     margin: 0 auto;
   }
 
+  .myfirstgridin{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  }
+
+  .myWrap{
+    display: none;
+  }
+  
+  .mywith{
+    max-width: 150%;
+    margin: 0 auto;
+  }
 }
 
 
