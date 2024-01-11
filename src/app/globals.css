@@ -144,3 +144,9 @@ section:nth-child(1){
   overflow: none !important;
   filter: brightness(130%);
 }
+
+.myImgD {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
