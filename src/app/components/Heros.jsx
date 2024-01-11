@@ -19,7 +19,7 @@ export default function Heros() {
 
   return (
     <div className="mt-8 flex flex-col jus">
-      <div className="flex justify-between">
+      <div className="flex justify-between newFlex">
         <div className="flex flex-col">
           <h1 className="uppercase font-bold text-5xl">
             get healthy body <br /> with the perfect

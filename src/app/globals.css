@@ -255,6 +255,23 @@ section:nth-child(1){
   .myli:nth-child(3) {
     display: block; 
   }
+
+  .myImgD .codign{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .newFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .myflexHeight{
+    height: 100%;
+  }
 }
 
 
