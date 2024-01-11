@@ -7,7 +7,7 @@ import { GiBurningEye } from "react-icons/gi";
 
 export default function Healthstate() {
   return (
-    <div className='max-w-6xl mx-auto pt-[10%] flex justify-between items-center'>
+    <div className='max-w-6xl mx-auto pt-[10%] flex justify-between items-center healthState'>
 
        <div className='flex-col flex'>
            <div className="text-2xl font-bold text-white">
@@ -51,7 +51,7 @@ export default function Healthstate() {
                 <h3 className='text-slate-100 text-sm font-bold'>Flexible Time</h3>
                 </div>
 
-                <div className="text-slate-300 text-xs">
+                <div className="text-slate-300 text-xs ">
                     <p>There are many fitness classes classes that are offered during</p>
                     <p>Off-park hours, such as early morning or late everythings</p>
                 </div>
@@ -64,11 +64,12 @@ export default function Healthstate() {
 
        {/* this will be a new programming side of code...*/}
 
-        <div className="relative mt-10">
+        <div className="relative mt-10  mygeneral ">
             <div className='need  w-96'>
             </div> 
-            <div className="absolute top-[0] left-[-22%] border-b-2 mywith">
-            <Image src={mitImg} alt="" className='object-cover rounded-xl'/>
+            <div className="absolute top-[0] left-[-22%]  mywith ">
+            <Image src={mitImg} alt="" className='object-cover rounded-xl '/>
+            <hr className='myHraC'/>
             </div>
             <div className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[23%] left-[69%]'>
                     <IoFitness className='h-8 w-8 text-red-800'/>
@@ -78,7 +79,7 @@ export default function Healthstate() {
                 </div>
              </div>
 
-             <div className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[65%] right-[69%]'>
+             <div className='flex items-center myblur w-44 py-2 px-1 gap-3 border rounded-2xl absolute top-[65%] right-[69%]'>
                     <GiBurningEye className='h-8 w-8 text-red-800'/>
                     <div className='flex flex-col'>
                     <p className='text-sm font-bold'>50 %</p>

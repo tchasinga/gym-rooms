@@ -17,7 +17,7 @@ import { EffectCards } from 'swiper/modules';
 
 export default function Bestplan() {
   return (
-    <div className="max-w-6xl mx-auto p-10">
+    <div className="max-w-6xl mx-auto ">
       <div className="text-center flex-col flex w-full">
         <h1 className="text-white text-2xl font-semibold mb-2">
           Choose the best plan
@@ -28,9 +28,9 @@ export default function Bestplan() {
         </p>
       </div>
 
-      <div className="">
-        <div className="flex flex-wrap items-center mt-10 justify-center gap-5">
-          <div className="bg-red-900 myRED w-1/4 h-80 rounded-xl p-5 flex flex-col text-center">
+      <div className="myElementFlex">
+        <div className="flex flex-wrap items-center mt-10 justify-center gap-5 AddnewWrap">
+          <div className="bg-red-900 myRED W-size h-80 rounded-xl p-5 flex flex-col text-center">
             <h3 className="uppercase font-light text-xs text-slate-200">
               discover
             </h3>
@@ -68,7 +68,7 @@ export default function Bestplan() {
             </div>
           </div>
 
-          <div className="bg-red-900 myRED w-1/4 h-[380px] rounded-xl p-5 flex flex-col text-center">
+          <div className="bg-red-900 myRED W-size h-[380px] rounded-xl p-5 flex flex-col text-center">
             <h3 className="uppercase font-light text-xs text-slate-200">
               discover
             </h3>
@@ -109,7 +109,7 @@ export default function Bestplan() {
             </div>
           </div>
 
-          <div className="bg-red-900 myRED w-1/4 h-80 rounded-xl p-5 flex flex-col text-center">
+          <div className="bg-red-900 myRED W-size h-80 rounded-xl p-5 flex flex-col text-center">
             <h3 className="uppercase font-light text-xs text-slate-200">
               discover
             </h3>
@@ -149,20 +149,20 @@ export default function Bestplan() {
 
       {/* Adding code is  online*/}
 
-      <div className="pt-10 pb-10 flex justify-between items-center">
+      <div className="pt-10 pb-10 flex justify-between items-center wDisney">
         <div className="flex flex-col">
           <div className="text-3xl text-teal-50 font-bold mb-5">
             <h1>
               What our happy Client <br /> Say About us
             </h1>
           </div>
-          <div className="text-sm text-slate-50">
+          <div className=" text-sm text-slate-50">
             <p>I've been a number of fitness within for about 6 month</p>
             <p>Now and i absoulutely love it ! the trainers are motivate</p>
             <p>and they really help to reach fitnes goals</p>
           </div>
 
-          <div className="container mt-5  w-80">
+          <div className="container mt-5  w-80 ">
             <Image
               src={IMmomko}
               alt="Picture of the author"
@@ -204,7 +204,7 @@ export default function Bestplan() {
 
         {/* second one..*/}
 
-        <div className=" w-1/2 mt-5">
+        <div className="  mt-5 ">
           <Swiper
             effect={"cards"}
             grabCursor={true}

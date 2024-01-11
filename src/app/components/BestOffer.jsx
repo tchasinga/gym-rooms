@@ -4,9 +4,9 @@ import { myObject } from '../projects/mygridsysten'
 
 export default function BestOffer() {
   return (
-    <div className='max-w-6xl mx-auto pt-10 w-full pb-10'>
+    <div className='max-w-6xl mx-auto pt-10 w-full pb-10 '>
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center flex-wrap newGriElement">
         <div className="text-3xl font-bold text-white">
           <h1>The Best programs we <br /> Offers for you</h1>          
         </div>

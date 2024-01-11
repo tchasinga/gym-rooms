@@ -9,7 +9,7 @@ export default function Companies() {
     <div className=''>
 
       <div className="myback">
-        <div className="max-w-6xl mx-auto p-5 items-center justify-center flex gap-10 flex-wrap w-full">
+        <div className="max-w-6xl mx-auto p-5 items-center justify-center flex gap-10 flex-wrap myfirstgrid w-full">
           <div className="text-white">
             <h1 className='text-2xl font-bold'>500K+ More</h1>
             <p className='text-sm text-slate-400'>Trusted Companies Partner</p>
@@ -32,9 +32,9 @@ export default function Companies() {
         </div>
       </div>
 
-        <div className="max-w-6xl mx-auto mt-28 flex ">
+        <div className="max-w-6xl mx-auto mt-28 flex getNewFlex">
 
-            <div className="relative  w-2/3 flex-1 ">
+            <div className="relative  reme flex-1 ">
                 <div className='myWidth rounded-2xl'>
                     <Image src={ketut} className='rounded-2xl' />
                 </div>

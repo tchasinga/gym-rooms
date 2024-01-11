@@ -67,6 +67,10 @@ nav {
   animation-duration: 2.5s;
 }
 
+.reme{
+  width: 66.666667%;
+}
+
 section {
   height: 100vh;
 }
@@ -87,7 +91,7 @@ section:nth-child(1){
 
 .myfirstgrid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
 }
 
@@ -161,6 +165,10 @@ section:nth-child(1){
   clip-path: circle(50% at 50% 50%);
 }
 
+.W-size{
+  width: 25%;
+}
+
 .myback{
   background: #35363a;
 }
@@ -225,3 +233,194 @@ section:nth-child(1){
   width: 240px;
   height: 320px;
 }
+
+
+
+
+@media screen and (max-width: 884px) {
+  .myh1 {
+    visibility: hidden;
+  }
+
+  .myli:nth-child(3) {
+    display: none;
+  }
+
+.myImgD .codign{
+  width: 150%;
+  height: 190%;
+  object-fit: cover;
+}
+
+.getNewFlex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.myWidth{
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.addingFlexHeigh{
+  height: 100%;
+  padding-bottom: 10%;
+}
+
+.healthState{
+  height: 100%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.myElementFlex{
+  width: 100%;
+  object-fit: cover;
+}
+
+.W-size{
+  width: 30%;
+}
+.wDisney{
+  width: 100%;
+  object-fit: cover;
+  padding-left: 5%;
+}
+}
+
+/* Adding my mobile version */
+@media screen and (max-width: 480px) {
+  .myh1 {
+    visibility: visible;
+  }
+
+  .myli:nth-child(3) {
+    display: block; 
+  }
+
+  .myImgD .codign{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .newFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .myflexHeight{
+    height: 100%;
+  }
+
+  .myWidth{
+    width: 1050px;
+    object-fit: contain;
+  }
+
+  .mt-28{
+    margin-top: 10px;
+  }
+
+  .addingFlexHeigh{
+    height: 100%;
+    padding-bottom: 2%;
+  }
+
+  .reme{
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .myblur{
+    position: absolute;
+    left: -1%;
+  }
+
+  .myfirstgrid{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .newGriElement{
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+  
+  .healthState{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .Healthstate{
+    background-color: #38393D; 
+    height: 100%;
+  }
+
+  .myHraC{
+    height: 1%;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .W-size{
+    width: 80%;
+  }
+
+  .AddnewWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .wDisney{
+    width: 100%;
+    object-fit: cover;
+    padding-left: 5%;
+    display: flex;
+    flex-direction:column-reverse; 
+    justify-content: center;
+  }
+
+  .mygeneral{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .myfirstgridin{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  }
+
+  .myWrap{
+    display: none;
+  }
+  
+  .mywith{
+    max-width: 150%;
+    margin: 0 auto;
+  }
+}
+
+
