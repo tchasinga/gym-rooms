@@ -46,7 +46,7 @@ export default function MyFooter() {
               <div className="flex items-center gap-2 cursor-pointer">
                 <FaPhoneAlt  className='text-red-800 text-lg'/>
                <a href="tel:+250787289028" className=''>
-               <p className='text-sm text-slate-400 cursor-pointer'>(+250)787289028</p>
+               <p className='text-sm text-slate-400 cursor-pointer'>(+250) 787289028</p>
                </a>
               </div>
 
