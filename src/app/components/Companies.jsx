@@ -13,12 +13,16 @@ export default function Companies() {
       <div className="myback">
         <div className="max-w-6xl mx-auto p-5 items-center justify-center flex gap-10 flex-wrap myfirstgrid w-full">
           <div className="text-white">
-            <h1 className='text-2xl font-bold'>500K+ More</h1>
+            <h1 className='text-2xl font-bold'>
+            <CountUp end={500} suffix="k+ More" duration={10}/>
+            </h1>
             <p className='text-sm text-slate-400'>Trusted Companies Partner</p>
           </div>
 
           <div className="text-white">
-            <h1 className='text-2xl font-bold'>300K+ View</h1>
+            <h1 className='text-2xl font-bold'>
+            <CountUp end={300} suffix="k+ View" duration={10}/>
+            </h1>
             <p className='text-sm text-slate-400'>Partner of training journey</p>
           </div>
 
