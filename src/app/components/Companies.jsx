@@ -3,6 +3,8 @@ import React from 'react';
 import Image from "next/image";
 import ketut from '../img/pexels-ketut-subiyanto-4720831.jpg'
 import ImageIcon from '../img/6741796.png'
+import CountUp from 'react-countup';
+
 
 export default function Companies() {
   return (

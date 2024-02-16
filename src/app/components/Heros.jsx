@@ -7,6 +7,7 @@ import TwoImg from "../img/pexels-mike-jones.png";
 import { FaVideo } from "react-icons/fa";
 import { useState } from "react";
 import myVideo from '../video/GYMInteriorDesign.mp4'
+import CountUp from 'react-countup';
 
 export default function Heros() {
 
@@ -57,17 +58,23 @@ export default function Heros() {
 
           <div className="flex gap-3 text-center mt-10 flex-wrap">
             <div className="border-r-2 pr-4">
-              <h1 className="text-xl font-bold">305+</h1>
+              <h1 className="text-xl font-bold">
+                <CountUp end={305} suffix="k+" duration={5}/>
+              </h1>
               <p className="text-xs text-gray-500">Expert Trainers</p>
             </div>
 
             <div className="border-r-2 pr-4">
-              <h1 className="text-xl font-bold">905+</h1>
+              <h1 className="text-xl font-bold">
+              <CountUp end={905} suffix="+" duration={9}/>
+              </h1>
               <p className="text-xs text-gray-500">Member Joined</p>
             </div>
 
             <div className="border-r-2 pr-4">
-              <h1 className="text-xl font-bold">700+</h1>
+              <h1 className="text-xl font-bold">
+              <CountUp end={700} suffix="+" duration={9}/>
+              </h1>
               <p className="text-xs text-gray-500">Fitness Programs</p>
             </div>
           </div>
