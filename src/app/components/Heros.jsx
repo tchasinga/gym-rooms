@@ -10,7 +10,7 @@ export default function Heros() {
 
   return (
       <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-          <h1>Balolebwami is back</h1>
+          <h1>This hero section is under update..</h1>
       </div>
   );
 }
