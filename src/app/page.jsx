@@ -13,9 +13,9 @@ export default function Home() {
     <main className="">
 
       <Heros/>
-       <section className='addingFlexHeigh'>
+     
          <Companies />  
-       </section>
+       
 
        <div className='NewCodeIsnow '>
        <BestOffer />

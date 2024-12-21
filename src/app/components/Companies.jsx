@@ -38,7 +38,7 @@ export default function Companies() {
         </div>
       </div>
 
-        <div className="max-w-6xl mx-auto mt-28 flex getNewFlex">
+        <div className="max-w-6xl mx-auto mt-28 flex getNewFlex py-[3%]">
 
             <div className="relative  reme flex-1 ">
                 <div className='myWidth rounded-2xl'>

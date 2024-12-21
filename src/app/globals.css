@@ -324,18 +324,16 @@ section:nth-child(1){
   }
 
   .myWidth{
-    width: 1050px;
+    width: 90%;
     object-fit: contain;
+    margin: 0 auto;
   }
 
   .mt-28{
     margin-top: 10px;
   }
 
-  .addingFlexHeigh{
-    height: 100%;
-    padding-bottom: 2%;
-  }
+
 
   .reme{
     width: 100%;
