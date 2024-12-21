@@ -65,14 +65,14 @@ export default function Heros() {
       {/* Text Section */}
       <div
         ref={headingRef}
-        className="absolute top-[19%] text-white text-[8rem] w-full font-bold uppercase max-w-screen-2xl z-0"
+        className="absolute top-[19%] text-white sm:text-[8rem] p-2 w-full font-bold uppercase max-w-screen-2xl z-0"
       >
         <h1 className="leading-3">make</h1>
         <h1>your impact</h1>
       </div>
       <div
         ref={subHeadingRef}
-        className="absolute bottom-14 left-[65%] text-white text-[8rem] font-bold uppercase  w-[20%] z-0"
+        className="absolute bottom-14 left-[65%] text-white sm:text-[8rem] font-bold uppercase  w-[20%] sm:w-[15%] "
       >
         <h1>last</h1>
       </div>
