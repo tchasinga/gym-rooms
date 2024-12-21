@@ -57,7 +57,7 @@ body {
   height: 100vh;
   padding: 2em;
   background: #c5fb45;
-  z-index: 2;
+  z-index: 20;
   display: flex;
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
 
@@ -97,6 +97,10 @@ body {
 
 .menu-link-item-holder {
   position: relative;
+}
+
+.menu-container{
+  z-index: 20;
 }
 
 .menu-link-item-holder a {
