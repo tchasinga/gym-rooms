@@ -58,7 +58,7 @@ export default function Heros() {
       {/* Image Section */}
       <div className="relative">
         <div className="w-full relative z-10">
-          <Image src={TwoImg} className="object-fill w-full h-full" />
+          <Image src={TwoImg} className="object-fill max-h-full" />
         </div>
       </div>
 
