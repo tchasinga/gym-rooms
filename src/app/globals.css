@@ -20,6 +20,8 @@ ul .myli:hover {
   color: #770012;
 }
 
+
+
 .myTrabs {
   transition: all 2.5s ease;
   mix-blend-mode: difference;
@@ -178,7 +180,6 @@ section:nth-child(1){
   backdrop-filter: blur(5px);
   background-color: rgba(226, 232, 240, 0.224);
 }
-
 
 .myWidth{
   max-width: 80%;

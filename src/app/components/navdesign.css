@@ -16,8 +16,7 @@ body {
   background-color: #f5f5f5;
 }
 
-a,
-p {
+.menu-info-col{
   color: #000;
   text-decoration: none;
   text-transform: uppercase;

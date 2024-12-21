@@ -124,7 +124,7 @@ export default function Navbars() {
             {menu.map((link, index) => (
               <div className="menu-link-item" key={index}>
                 <div className="menu-link-item-holder" onClick={toggleMenu}>
-                  <Link href={link.link}>{link.name}</Link>
+                  <Link className='uppercase' href={link.link}>{link.name}</Link>
                 </div>
               </div>
             ))}
