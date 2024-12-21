@@ -56,8 +56,8 @@ export default function Heros() {
     <div className="min-h-screen bg-customGray flex items-center justify-center w-full mybgGround relative">
       {/* Image Section */}
       <div className="relative">
-        <div className="w-full z-10">
-          <Image src={TwoImg} className="object-fill w-full h-full" />
+        <div className="w-full relative z-10">
+          <Image src={TwoImg} className="object-contain w-full h-full" />
         </div>
       </div>
 
