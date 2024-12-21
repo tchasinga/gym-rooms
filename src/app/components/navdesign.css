@@ -43,10 +43,17 @@ body {
 .menu-open p {
   color: black;
   cursor: pointer;
+  
 }
+
+.menu-open{
+  z-index: 100;
+}
+
 .menu-close p {
   color: #000;
   cursor: pointer;
+  z-index: 20;
 }
 
 .menu-overlay {
