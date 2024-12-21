@@ -1,112 +1,155 @@
 "use client"
+import React, { useState, useRef, useEffect } from 'react'
+import './navdesign.css'
+import Link from 'next/link'
+import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react'
 
-import React, { useState } from "react";
-import { IoFitness } from "react-icons/io5";
-import Link from "next/link";
-import { motion } from 'framer-motion';
-import 'animate.css';
-import Heros from "./Heros";
+const menu = [
+  { name: 'Home', link: '/' },
+  { name: 'About', link: '/about' },
+  { name: 'Contact', link: '/contact' },
+  { name: 'Services', link: '/services' },
+  { name: 'Blog', link: '/blog' },
+  { name: 'Portfolio', link: '/portfolio' },
+  { name: 'Shop', link: '/shop' },
+  { name: 'Elements', link: '/elements' },
+]
 
+const Textchange = [
+  { themer: 'Tchasinga' },
+  { themer: 'Welcome' },
+  { themer: 'About' },
+  { themer: 'Contact' },
+  { themer: 'Services' },
+  { themer: 'Blog' },
+  { themer: 'Portfolio' },
+  { themer: 'Shop' },
+  { themer: 'Elements' },
+]
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Navbars() {
+  const container = useRef()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [currentText, setCurrentText] = useState(0)
+  const textRef = useRef()
 
-  const myMenu = [
-    { name: "Home", Links: "home" },
-    { name: "About Us", Links: "about" },
-    { name: "Program", Links: "Program" },
-    { name: "Memberships", Links: "Memberships" },
-    { name: "Testimonios", Links: "Testimonios" },
-    { name: "Contact", Links: "Contact" },
-  ];
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+    console.log(isMenuOpen)
+  }
 
-  const variants = {
-    isOpen: {
-      transition: { staggerChildren: 0.1 },
-    },
-    isClosed: {
-      transition: { staggerChildren: 0.05, staggerDirection: -1 },
-    },
-  };
+  const tl = useRef();
+  useGSAP(() => {
+    gsap.set(".menu-link-item-holder", { y: 75 });
+    tl.current = gsap.timeline({ paused: true })
+      .to(".menu-overlay", {
+        duration: 2.25,
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        ease: "power4.inOut"
+      })
+      .to(".menu-link-item-holder", {
+        y: 0,
+        duration: 1,
+        stagger: 0.1,
+        ease: "power4.inOut",
+        delay: -0.25
+      })
+  }, { scope: container })
 
-  const itemVariants = {
-    isOpen: {
-      y: 0,
-      opacity: 1,
-    },
-    isClosed: {
-      y: 150,
-      opacity: 0,
-    },
-  };
+  useEffect(() => {
+    if (isMenuOpen) {
+      tl.current.play()
+    } else {
+      tl.current.reverse()
+    }
+  }, [isMenuOpen])
+
+  // Handle text changes with animation
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextText = (currentText + 1) % Textchange.length
+
+      // Animate the text out
+      gsap.to(textRef.current, {
+        opacity: 0,
+        y: -20,
+        duration: 0.5,
+        ease: "power3.out",
+        onComplete: () => {
+          // Change the text and animate it back in
+          setCurrentText(nextText)
+          gsap.fromTo(
+            textRef.current,
+            { opacity: 0, y: 20 },
+            { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }
+          )
+        }
+      })
+    }, 3000)
+
+    return () => clearInterval(interval) // Cleanup the interval on component unmount
+  }, [currentText])
 
   return (
-    <nav>
-      <div className="flex justify-between items-center max-w-6xl mx-auto p-5 w-full left-0 top-0 z-[999]">
-        <div className="flex gap-2 items-center">
-          <IoFitness className="text-4xl text-slate-900 mytext animate__bounceIn animate__animated" />
-          <h1 className="text-2xl font-bold text-gray-100 myh1">Fitness room</h1>
+    <div className='menu-container' id='famili' ref={container}>
+      <div className="menu-bar">
+        <div className="menu-logo">
+          <Link href='/'>
+            <span ref={textRef}>{Textchange[currentText].themer}</span>
+          </Link>
         </div>
 
-        <div className="md:block hidden">
-          <motion.ul className="flex gap-8 items-center font-medium text-sm" variants={variants}>
-            {myMenu.map((item) => (
-              <motion.li className="myli" key={item.Links} variants={itemVariants} >
-                <Link href={item.Links} whileHover={{ scale: 1.9 }}>{item.name}</Link>
-              </motion.li>
-            ))}
-          </motion.ul>
-        </div>
-
-        <motion.button
-          whileTap={[{ scale: 1.3 }, { rotate: 180 }, { duration: 4.5 }]}
-          className={`z-[999] ${
-            isOpen ? "text-gray-200" : "text-gray-300"
-          } md:hidden text-2xl `}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <svg
-            className="w-8 h-8  text-slate-200 myTrabs"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {isOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              ></path>
-            )}
-          </svg>
-        </motion.button>
-
-        <div
-          className={`md:hidden text-gray-900 absolute  w-full h-screen px-7 py-2 font-medium bg-black top-0 duration-1000 ${
-            isOpen ? "right-0" : "right-[100%]"
-          }`}
-        >
-          <motion.ul className="flex flex-col justify-center  h-full font-medium text-lg gap-10 py-2" variants={variants}>
-            {myMenu.map((item) => (
-              <motion.li className="myli px-6 text-3xl text-gray-200 font-extralight" key={item.Links} variants={itemVariants}>
-                <Link href={item.Links}>{item.name}</Link>
-              </motion.li>
-            ))}
-          </motion.ul>
+        <div className="menu-open" onClick={toggleMenu}>
+          <p className='font-bold'>Menu</p>
         </div>
       </div>
-      <section className="max-w-6xl mx-auto p-3 text-white myflexHeight ">
-        <Heros />
-      </section>
-    </nav>
-  );
+
+      <div className="menu-overlay">
+        <div className="menu-overlay-bar">
+          <div className="menu-logo">
+            <Link href='/'>Tchasinga</Link>
+          </div>
+          <div className="menu-close" onClick={toggleMenu}>
+            <p className='font-bold'>Close</p>
+          </div>
+        </div>
+
+        <div className="menu-close-icon" onClick={toggleMenu}>
+          <p>&#x2715;</p>
+        </div>
+
+        <div className="menu-copy">
+          <div className="menu-links">
+            {menu.map((link, index) => (
+              <div className="menu-link-item" key={index}>
+                <div className="menu-link-item-holder" onClick={toggleMenu}>
+                  <Link href={link.link}>{link.name}</Link>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="menu-info">
+            <div className="menu-info-col">
+              <a href="#">X &#8599;</a>
+              <a href="#">Instagram &#8599;</a>
+              <a href="#">Facebook &#8599;</a>
+              <a href="#">Twitter &#8599;</a>
+              <a href="#">LinkedIn &#8599;</a>
+            </div>
+
+            <div className="menu-info-col">
+              <p>Copyright © 2023 Tchasinga</p>
+              <p>+254 75 32 75 299</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="menu-preview">
+          <p>View Showreel</p>
+        </div>
+      </div>
+    </div>
+  )
 }
