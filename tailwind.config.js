@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        customGray: '#38393d', // Add your custom color here
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,4 +18,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
