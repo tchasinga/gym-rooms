@@ -57,7 +57,7 @@ export default function Heros() {
       {/* Image Section */}
       <div className="relative">
         <div className="w-full relative z-10">
-          <Image src={TwoImg} className="object-contain w-full h-full" />
+          <Image src={TwoImg} className="object-fill w-full h-full" />
         </div>
       </div>
 
@@ -71,7 +71,7 @@ export default function Heros() {
       </div>
       <div
         ref={subHeadingRef}
-        className="absolute bottom-0 left-[64%] text-white text-[8rem] font-bold uppercase  w-[20%] z-0"
+        className="absolute bottom-10 left-[65%] text-white text-[8rem] font-bold uppercase  w-[20%] z-0"
       >
         <h1>last</h1>
       </div>
