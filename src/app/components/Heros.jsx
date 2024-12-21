@@ -4,19 +4,10 @@ import React from "react";
 import Image from "next/image";
 import OneImg from "../img/pexels-pikx-by-panther-1547248.jpg";
 import TwoImg from "../img/pexels-mike-jones.png";
-import { FaVideo } from "react-icons/fa";
-import { useState } from "react";
-import myVideo from '../video/GYMInteriorDesign.mp4'
+
 import CountUp from 'react-countup';
 
 export default function Heros() {
-
-    const [showVideo, setShowVideo] = useState(false);
-
-    const handlerVideoShow= () => {
-        setShowVideo(true);
-
-    }
 
   return (
     <div className="mt-8 flex flex-col jus">
@@ -41,18 +32,6 @@ export default function Heros() {
               <button className="bg-red-900 hover:bg-blue-900 duration-700 text-white font-normal py-2 px-8 rounded-full">
                 Get stared
               </button>
-            </div>
-
-            <div onClick={handlerVideoShow}  className=" flex items-center gap-2 cursor-pointer">
-              <div className="bg-slate-600 w-12 p-4 flex justify-center items-center rounded-3xl cursor-pointer animate__swing animate__animated">
-                <FaVideo />
-              </div>
-              {showVideo && (
-                    <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999] flex justify-center items-center">
-                        <iframe width="560" height="315" src={myVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="rounded-2xl"></iframe>
-                    </div>
-                )}
-              <p className="text-gray-600 font-normal text-sm cursor-pointer">Watch Video</p>
             </div>
           </div>
 
