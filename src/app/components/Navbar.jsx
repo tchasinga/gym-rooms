@@ -7,13 +7,13 @@ import { useGSAP } from '@gsap/react'
 
 const menu = [
   { name: 'Home', link: '/' },
-  { name: 'About', link: '/about' },
-  { name: 'Contact', link: '/contact' },
-  { name: 'Services', link: '/services' },
-  { name: 'Blog', link: '/blog' },
-  { name: 'Portfolio', link: '/portfolio' },
-  { name: 'Shop', link: '/shop' },
-  { name: 'Elements', link: '/elements' },
+  { name: 'About', link: '#about' },
+  { name: 'Contact', link: '#contact' },
+  { name: 'Services', link: '#services' },
+  { name: 'Blog', link: '#blog' },
+  { name: 'Portfolio', link: '#portfolio' },
+  { name: 'Shop', link: '#shop' },
+  { name: 'Elements', link: '#elements' },
 ]
 
 const Textchange = [

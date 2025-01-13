@@ -8,8 +8,7 @@ import CountUp from 'react-countup';
 
 export default function Companies() {
   return (
-    <div className='bg-customGray min-h-screen'>
-
+    <div  className='bg-customGray min-h-screen' id='/about'>
       <div className="myback">
         <div className="max-w-6xl mx-auto p-5 items-center justify-center flex gap-10 flex-wrap myfirstgrid w-full">
           <div className="text-white">
