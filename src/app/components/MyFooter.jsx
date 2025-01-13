@@ -86,7 +86,7 @@ export default function MyFooter() {
 
           <div className="">
             <p className="text-sm text-slate-100">
-              @2024 Design by tchasinga balolebwami <span className="myWrap">All Copyrights reservesed</span> 
+              @{new Date().getFullYear()} Design by tchasinga balolebwami <span className="myWrap">All Copyrights reservesed</span> 
             </p>
           </div>
 
