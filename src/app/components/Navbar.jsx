@@ -17,7 +17,7 @@ const menu = [
 ]
 
 const Textchange = [
-  { themer: 'Tchasinga' },
+  { themer: 'Gym room' },
   { themer: 'Welcome' },
   { themer: 'About' },
   { themer: 'Contact' },
@@ -95,9 +95,9 @@ export default function Navbars() {
     <div className='menu-container' id='famili' ref={container}>
       <div className="menu-bar">
         <div className="menu-logo">
-          <Link href='/'>
+          <a href='/'>
             <span ref={textRef}>{Textchange[currentText].themer}</span>
-          </Link>
+          </a>
         </div>
 
         <div className="menu-open" onClick={toggleMenu}>
