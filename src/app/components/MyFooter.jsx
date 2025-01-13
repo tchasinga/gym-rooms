@@ -47,9 +47,9 @@ export default function MyFooter() {
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2 cursor-pointer">
               <FaPhoneAlt className="text-red-800 text-lg" />
-              <a href="tel:+250787289028" className="">
+              <a href="tel:+250782283225" className="">
                 <p className="text-sm text-slate-400 cursor-pointer">
-                  (+250) 787289028
+                  (+250) 782283225
                 </p>
               </a>
             </div>
@@ -58,7 +58,7 @@ export default function MyFooter() {
               <MdEmail className="text-red-800  text-lg" />
               <a href="tchasingajacques@gmail.com" className="">
                 <p className="text-sm text-slate-400 cursor-pointer">
-                  tchasingajacques@gmail.com
+                  rulamibalobwami@gmail.com
                 </p>
               </a>
             </div>
