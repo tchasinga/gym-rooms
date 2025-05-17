@@ -55,7 +55,7 @@ export default function Heros() {
 
   return (
     <div className="min-h-screen bg-customGray flex items-center justify-center w-full mybgGround relative">
-      {/* Image Section */}
+      {/* Image Section now... */}
       <div className="relative">
         <div className="w-full relative z-10">
           <Image src={TwoImg} className="object-fill max-h-full" />
