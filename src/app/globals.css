@@ -181,6 +181,11 @@ section:nth-child(1){
   background-color: rgba(226, 232, 240, 0.224);
 }
 
+.backdropdesign{
+  backdrop-filter: blur(5px);
+  background-color: rgba(226, 232, 240, 0.224);
+}
+
 .myWidth{
   max-width: 80%;
   object-fit: contain;

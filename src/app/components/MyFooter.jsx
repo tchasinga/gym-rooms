@@ -287,7 +287,7 @@ export default function MyFooter() {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-2xl shadow-2xl hover:shadow-red-500/25 transition-all duration-300 transform hover:scale-110 z-50 flex items-center justify-center"
+        className="fixed bottom-8 right-8 backdropdesign w-14 h-14 text-white rounded-2xl shadow-2xl hover:shadow-red-500/25 transition-all duration-300 transform hover:scale-110 z-50 flex items-center justify-center"
       >
         <IoArrowUp className="text-xl" />
       </button>
