@@ -1,10 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(https://fonts.googleapis.com/css?family=Mona+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 *{
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: 'Mona Sans', sans-serif;
 }
 
 .myli:nth-child(1) {
