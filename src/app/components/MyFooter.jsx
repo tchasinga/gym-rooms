@@ -13,7 +13,7 @@ export default function MyFooter() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Company Section */}
-          <div className="text-white">
+          <div className="text-white txt">
             <h1 className="text-xl font-bold pb-4 border-b-2 border-red-600 inline-block">Company</h1>
             <div className="flex flex-col gap-3 mt-5">
               {['About us', 'Why us', 'Security', 'Partnership'].map((item) => (
