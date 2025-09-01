@@ -3,10 +3,10 @@
 @tailwind utilities;
 @import url(https://fonts.googleapis.com/css?family=Mona+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-*{
+* {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: 'Mona Sans', sans-serif;
+  font-family: "Mona Sans", sans-serif;
 }
 
 .myli:nth-child(1) {
@@ -21,7 +21,6 @@
 ul .myli:hover {
   color: #770012;
 }
-
 
 .myTrabs {
   transition: all 2.5s ease;
@@ -42,36 +41,36 @@ nav {
   color: #920308;
 }
 
-.animate__bounceIn{
+.animate__bounceIn {
   animation-iteration-count: infinite;
   animation-delay: 3s;
   --animate-duration: 2.5s;
   animation-duration: 2.5s;
 }
 
-.animate__swing{
+.animate__swing {
   animation-iteration-count: infinite;
   animation-delay: 7s;
-  
+
   --animate-duration: 2.5s;
   animation-duration: 2.5s;
 }
 
-.animate__shakeX{
+.animate__shakeX {
   animation-iteration-count: infinite;
   animation-delay: 2s;
   --animate-duration: 2.5s;
   animation-duration: 2.5s;
 }
 
-.animate__fadeInLeft{
+.animate__fadeInLeft {
   animation-iteration-count: infinite;
   animation-delay: 7s;
   --animate-duration: 2.5s;
   animation-duration: 2.5s;
 }
 
-.reme{
+.reme {
   width: 66.666667%;
 }
 
@@ -79,61 +78,61 @@ section {
   height: 100vh;
 }
 
-section:nth-child(1){
+section:nth-child(1) {
   background: #38393d;
   backdrop-filter: blur(5px);
 }
 
-.mynewone{
-  background: #35363A;
+.mynewone {
+  background: #35363a;
 }
 
-.NewCodeIsnow{
+.NewCodeIsnow {
   width: 100%;
-  background: #35363A;
+  background: #35363a;
 }
 
-.myfirstgrid{
+.myfirstgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
 }
 
-.bgColor{
+.bgColor {
   background: #434343;
   transition: all 2.5s ease;
   cursor: pointer;
 }
 
-.myRED{
+.myRED {
   background: #434343;
   transition: all 2.5s ease;
   cursor: pointer;
 }
 
-.MyFooter{
-  background: #38393D;
+.MyFooter {
+  background: #38393d;
 }
 
-.myRED:hover{
-  background: #F4622C;
+.myRED:hover {
+  background: #f4622c;
 }
 
-.bgColor:hover{
-  background: #F4622C;
+.bgColor:hover {
+  background: #f4622c;
 }
 
-.need{
-  background: #F4622C;
+.need {
+  background: #f4622c;
   clip-path: circle(50% at 50% 50%);
 }
 
-.w-96{
+.w-96 {
   width: 20rem;
   height: 20rem;
 }
 
-.mywith{
+.mywith {
   width: 150%;
   height: 100%;
   object-fit: cover;
@@ -159,57 +158,57 @@ section:nth-child(1){
   object-fit: cover;
 }
 
-.myImgD .codign{
+.myImgD .codign {
   width: 150%;
   height: 150%;
   object-fit: cover;
 }
 
-.mycircle{
+.mycircle {
   clip-path: circle(50% at 50% 50%);
 }
 
-.W-size{
+.W-size {
   width: 25%;
 }
 
-.myback{
+.myback {
   background: #35363a;
 }
 
-.myblur{
+.myblur {
   backdrop-filter: blur(5px);
   background-color: rgba(226, 232, 240, 0.224);
 }
 
-.backdropdesign{
+.backdropdesign {
   backdrop-filter: blur(5px);
   background-color: rgba(226, 232, 240, 0.224);
 }
 
-.myWidth{
+.myWidth {
   max-width: 80%;
   object-fit: contain;
 }
 
-.Success{
+.Success {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-64%, 20%);
 }
 
-.Healthstate{
-  background-color: #38393D; 
+.Healthstate {
+  background-color: #38393d;
 }
 
-.container{
+.container {
   display: flex;
   gap: 5px;
 }
 
-.avatar{
-  width:  90px;
+.avatar {
+  width: 90px;
   height: 90px;
   object-fit: cover;
   border-radius: 50%;
@@ -220,30 +219,26 @@ section:nth-child(1){
   transition: all 0.5s ease;
 }
 
-.avatar:not(:first-child){
+.avatar:not(:first-child) {
   margin-left: -60px;
- }
+}
 
-
-.container:hover > :not(:hover){
+.container:hover > :not(:hover) {
   filter: blur(5px);
 }
 
-.container .avatar:hover{
+.container .avatar:hover {
   z-index: 1;
   filter: blur(0px);
   box-shadow: 2px 2px 20px #333;
   top: -22.5px;
   transform: scale(1.6);
- }
+}
 
- .swiper {
+.swiper {
   width: 240px;
   height: 320px;
 }
-
-
-
 
 @media screen and (max-width: 884px) {
   .myh1 {
@@ -254,51 +249,50 @@ section:nth-child(1){
     display: none;
   }
 
-.myImgD .codign{
-  width: 150%;
-  height: 190%;
-  object-fit: cover;
-}
+  .myImgD .codign {
+    width: 150%;
+    height: 190%;
+    object-fit: cover;
+  }
 
-.getNewFlex{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  
-}
+  .getNewFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
-.myWidth{
-  max-width: 100%;
-  object-fit: contain;
-}
+  .myWidth {
+    max-width: 100%;
+    object-fit: contain;
+  }
 
-.addingFlexHeigh{
-  height: 100%;
-  padding-bottom: 10%;
-}
+  .addingFlexHeigh {
+    height: 100%;
+    padding-bottom: 10%;
+  }
 
-.healthState{
-  height: 100%;
-  padding-bottom: 10%;
-  display: flex;
-  flex-direction: column;
-}
+  .healthState {
+    height: 100%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+  }
 
-.myElementFlex{
-  width: 100%;
-  object-fit: cover;
-}
+  .myElementFlex {
+    width: 100%;
+    object-fit: cover;
+  }
 
-.W-size{
-  width: 30%;
-}
-.wDisney{
-  width: 100%;
-  object-fit: cover;
-  padding-left: 5%;
-}
+  .W-size {
+    width: 30%;
+  }
+  .wDisney {
+    width: 100%;
+    object-fit: cover;
+    padding-left: 5%;
+  }
 }
 
 /* Adding my mobile version */
@@ -308,61 +302,58 @@ section:nth-child(1){
   }
 
   .myli:nth-child(3) {
-    display: block; 
+    display: block;
   }
 
-  .myImgD .codign{
+  .myImgD .codign {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .newFlex{
+  .newFlex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    
   }
-  .myflexHeight{
+  .myflexHeight {
     height: 100%;
   }
 
-  .myWidth{
+  .myWidth {
     width: 90%;
     object-fit: contain;
     margin: 0 auto;
   }
 
-  .mt-28{
+  .mt-28 {
     margin-top: 10px;
   }
 
-
-
-  .reme{
+  .reme {
     width: 100%;
     object-fit: fill;
   }
 
-  .myblur{
+  .myblur {
     position: absolute;
     left: -1%;
   }
 
-  .myfirstgrid{
+  .myfirstgrid {
     width: 90%;
     margin: 0 auto;
   }
 
-  .newGriElement{
+  .newGriElement {
     width: 93%;
     margin: 0 auto;
     margin-bottom: 5%;
   }
-  
-  .healthState{
+
+  .healthState {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -371,22 +362,22 @@ section:nth-child(1){
     margin: 0 auto;
   }
 
-  .Healthstate{
-    background-color: #38393D; 
+  .Healthstate {
+    background-color: #38393d;
     height: 100%;
   }
 
-  .myHraC{
+  .myHraC {
     height: 1%;
     width: 70%;
     margin: 0 auto;
   }
 
-  .W-size{
+  .W-size {
     width: 80%;
   }
 
-  .AddnewWrap{
+  .AddnewWrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -394,16 +385,16 @@ section:nth-child(1){
     width: 100%;
   }
 
-  .wDisney{
+  .wDisney {
     width: 100%;
     object-fit: cover;
     padding-left: 5%;
     display: flex;
-    flex-direction:column-reverse; 
+    flex-direction: column-reverse;
     justify-content: center;
   }
 
-  .mygeneral{
+  .mygeneral {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -412,21 +403,19 @@ section:nth-child(1){
     margin: 0 auto;
   }
 
-  .myfirstgridin{
+  .myfirstgridin {
     width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   }
 
-  .myWrap{
+  .myWrap {
     display: none;
   }
-  
-  .mywith{
+
+  .mywith {
     max-width: 150%;
     margin: 0 auto;
   }
 }
-
-
