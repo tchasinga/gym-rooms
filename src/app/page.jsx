@@ -1,34 +1,34 @@
-"use client"
-import Image from 'next/image'
-import Companies from './components/Companies'
-import BestOffer from './components/BestOffer'
-import Healthstate from './components/Healthstate'
-import Bestplan from './components/Bestplan'
-import MyFooter from './components/MyFooter'
+"use client";
 
+import Companies from "./components/Companies";
+import BestOffer from "./components/BestOffer";
+import Healthstate from "./components/Healthstate";
+import Bestplan from "./components/Bestplan";
+import MyFooter from "./components/MyFooter";
+import Heros from "./components/Heros";
 
 export default function Home() {
   return (
     <main className="">
-       <section className='addingFlexHeigh'>
-         <Companies />  
-       </section>
+      <Heros />
 
-       <div className='NewCodeIsnow '>
-       <BestOffer />
-       </div>
+      <Companies />
 
-       <section className='Healthstate'>
+      <div className="NewCodeIsnow ">
+        <BestOffer />
+      </div>
+
+      <section className="Healthstate">
         <Healthstate />
-       </section>
+      </section>
 
-       <div className='mynewone'>
-          <Bestplan />
-        </div>
+      <div className="mynewone">
+        <Bestplan />
+      </div>
 
-        <div className="MyFooter">
-         <MyFooter />
-       </div> 
+      <div className="MyFooter">
+        <MyFooter />
+      </div>
     </main>
-  )
+  );
 }
