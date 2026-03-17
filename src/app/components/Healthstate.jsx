@@ -71,7 +71,10 @@ export default function Healthstate() {
             <Image src={mitImg} alt="" className='object-cover rounded-xl '/>
             <hr className='myHraC'/>
             </div>
-            <div className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[23%] left-[69%]'>
+            <div
+              className='flex items-center myblur w-44 py-2 px-1 gap-3 rounded-2xl absolute top-[23%] left-[69%]'
+              style={{ left: '220px', top: '38px' }}
+            >
                     <IoFitness className='h-8 w-8 text-red-800'/>
                     <div className='flex flex-col'>
                     <p className='text-sm font-bold'>80 bpm</p>
@@ -79,7 +82,10 @@ export default function Healthstate() {
                 </div>
              </div>
 
-             <div className='flex items-center myblur w-44 py-2 px-1 gap-3 border rounded-2xl absolute top-[65%] right-[69%]'>
+             <div
+               className='flex items-center myblur w-44 py-2 px-1 gap-3 border rounded-2xl absolute top-[65%] right-[69%]'
+               style={{ left: '-72px', top: '233px' }}
+             >
                     <GiBurningEye className='h-8 w-8 text-red-800'/>
                     <div className='flex flex-col'>
                     <p className='text-sm font-bold'>50 %</p>

@@ -82,11 +82,13 @@ section:nth-child(1){
 
 .mynewone{
   background: #35363A;
+  height: 100%;
 }
 
 .NewCodeIsnow{
   width: 100%;
   background: #35363A;
+  height: 100%;
 }
 
 .myfirstgrid{

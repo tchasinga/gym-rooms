@@ -7,11 +7,11 @@ export default function BestOffer() {
     <div className='max-w-6xl mx-auto pt-10 w-full pb-10 '>
 
       <div className="flex justify-between items-center flex-wrap newGriElement">
-        <div className="text-3xl font-bold text-white">
-          <h1>The Best programs we <br /> Offers for you</h1>          
+        <div className="text-3xl text-white">
+          <h1 className="font-thin">The Best programs we <br /> Offers for you</h1>          
         </div>
          
-         <div className="text-slate-200 text-sm font-medium">
+         <div className="text-slate-200 text-sm font-thin" style={{ fontFamily: '"Segoe UI Emoji"' }}>
           <p>We offer a wide range of comprehensive fitness programs</p>
           <p>Designed to coter to individuals of all fitness levels our aim</p>
           <p>To help your achieve specific goals & maximize results</p>
