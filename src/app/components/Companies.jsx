@@ -3,25 +3,20 @@ import React from 'react';
 import Image from "next/image";
 import ketut from '../img/pexels-ketut-subiyanto-4720831.jpg'
 import ImageIcon from '../img/6741796.png'
-import CountUp from 'react-countup';
-
 
 export default function Companies() {
   return (
-    <div  className='bg-customGray min-h-screen' id='#about'>
+    <div className='min-h-screen flex-col justify-center items-center align-middle'>
+
       <div className="myback">
         <div className="max-w-6xl mx-auto p-5 items-center justify-center flex gap-10 flex-wrap myfirstgrid w-full">
           <div className="text-white">
-            <h1 className='text-2xl font-bold'>
-            <CountUp end={500} suffix="k+ More" duration={10}/>
-            </h1>
+            <h1 className='text-2xl font-bold'>500K+ More</h1>
             <p className='text-sm text-slate-400'>Trusted Companies Partner</p>
           </div>
 
           <div className="text-white">
-            <h1 className='text-2xl font-bold'>
-            <CountUp end={300} suffix="k+ View" duration={10}/>
-            </h1>
+            <h1 className='text-2xl font-bold'>300K+ View</h1>
             <p className='text-sm text-slate-400'>Partner of training journey</p>
           </div>
 
@@ -37,7 +32,7 @@ export default function Companies() {
         </div>
       </div>
 
-        <div className="max-w-6xl mx-auto mt-28 flex getNewFlex py-[3%]">
+        <div className="max-w-6xl mx-auto flex justify-center items-center min-h-screen">
 
             <div className="relative  reme flex-1 ">
                 <div className='myWidth rounded-2xl'>
