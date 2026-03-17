@@ -6,11 +6,11 @@ import OneImg from "../img/pexels-pikx-by-panther-1547248.jpg";
 import TwoImg from "../img/pexels-mike-jones.png";
 import { FaVideo } from "react-icons/fa";
 import { useState } from "react";
-import myVideo from '../video/GYMInteriorDesign.mp4'
 
 export default function Heros() {
 
     const [showVideo, setShowVideo] = useState(false);
+    const videoSrc = "https://www.youtube.com/embed/dQw4w9WgXcQ";
 
     const handlerVideoShow= () => {
         setShowVideo(true);
@@ -27,7 +27,7 @@ export default function Heros() {
           <div className="flex items-center gap-3">
             <h1 className="uppercase font-bold text-5xl">exercice</h1>
             <div className="">
-              <Image src={OneImg} className="myImgGet" />
+              <Image src={OneImg} className="myImgGet" alt="" />
             </div>
           </div>
           <div className="text-gray-600 font-normal text-sm mt-7">
@@ -48,7 +48,15 @@ export default function Heros() {
               </div>
               {showVideo && (
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999] flex justify-center items-center">
-                        <iframe width="560" height="315" src={myVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="rounded-2xl"></iframe>
+                        <iframe
+                          width="560"
+                          height="315"
+                          src={videoSrc}
+                          title="Video player"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="rounded-2xl"
+                        />
                     </div>
                 )}
               <p className="text-gray-600 font-normal text-sm cursor-pointer">Watch Video</p>
@@ -74,7 +82,7 @@ export default function Heros() {
         </div>
         <div className="relative">
           <div className="myImgD">
-            <Image src={TwoImg} className="codign" />
+            <Image src={TwoImg} className="codign" alt="" />
           </div>
             <div className="absolute top-[69%] left-0 bg-black bg-opacity-50 px-12 p-2 rounded-r-2xl">
               <h1 className="text-xl font-bold">Join our teams</h1>
