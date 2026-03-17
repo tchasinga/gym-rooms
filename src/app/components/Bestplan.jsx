@@ -23,7 +23,7 @@ export default function Bestplan() {
           Choose the best plan
         </h1>
         <p className="text-sm text-slate-200 font-normal">
-          Choose a plan that's rigth for your growing team. simple picing & no
+          Choose a plan that&apos;s rigth for your growing team. simple picing & no
           hiddeen charge
         </p>
       </div>
@@ -157,7 +157,7 @@ export default function Bestplan() {
             </h1>
           </div>
           <div className=" text-sm text-slate-50">
-            <p>I've been a number of fitness within for about 6 month</p>
+            <p>I&apos;ve been a number of fitness within for about 6 month</p>
             <p>Now and i absoulutely love it ! the trainers are motivate</p>
             <p>and they really help to reach fitnes goals</p>
           </div>
