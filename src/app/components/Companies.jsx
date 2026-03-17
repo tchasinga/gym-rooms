@@ -6,7 +6,7 @@ import ImageIcon from '../img/6741796.png'
 
 export default function Companies() {
   return (
-    <div className=''>
+    <div className='min-h-screen flex-col justify-center items-center align-middle'>
 
       <div className="myback">
         <div className="max-w-6xl mx-auto p-5 items-center justify-center flex gap-10 flex-wrap myfirstgrid w-full">
@@ -32,7 +32,7 @@ export default function Companies() {
         </div>
       </div>
 
-        <div className="max-w-6xl mx-auto mt-28 flex getNewFlex">
+        <div className="max-w-6xl mx-auto flex justify-center items-center min-h-screen">
 
             <div className="relative  reme flex-1 ">
                 <div className='myWidth rounded-2xl'>

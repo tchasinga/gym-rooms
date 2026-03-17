@@ -18,7 +18,7 @@ export default function Heros() {
     }
 
   return (
-    <div className="mt-8 flex flex-col max-w-7xl mx-auto min-h-screen justify-center">
+    <div className="mt-8 flex flex-col max-w-7xl mx-auto min-h-screen justify-center " >
       <div className="flex justify-between newFlex">
         <div className="flex flex-col">
           <h1 className="uppercase font-bold text-5xl">

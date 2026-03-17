@@ -9,8 +9,10 @@ import Heros from "./components/Heros";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
+    <div className="">
       <Heros />
+    </div>
 
       <Companies />
 
