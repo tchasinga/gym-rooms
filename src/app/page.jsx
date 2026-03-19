@@ -6,6 +6,7 @@ import Healthstate from "./components/Healthstate";
 import Bestplan from "./components/Bestplan";
 import MyFooter from "./components/MyFooter";
 import Heros from "./components/Heros";
+import AiAssistant from "./components/AiAssistant";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <div className="MyFooter">
         <MyFooter />
       </div>
+      <AiAssistant />
     </main>
   );
 }
