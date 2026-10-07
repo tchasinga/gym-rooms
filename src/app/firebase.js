@@ -1,6 +1,8 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAI, getGenerativeModel, GoogleAIBackend} from "firebase/ai";
+import { initializeApp, getApps, getApp } from "firebase/app";
+import { getAnalytics, isSupported } from "firebase/analytics";
+import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
+import { getAI, getGenerativeModel, GoogleAIBackend } from "firebase/ai";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -10,14 +12,39 @@ const firebaseConfig = {
   storageBucket: "aiprojectfortest-ecc16.firebasestorage.app",
   messagingSenderId: "161356290403",
   appId: "1:161356290403:web:35eb3668423faad38e1b56",
-  measurementId: "G-WBBNT3L9L5"
+  measurementId: "G-WBBNT3L9L5",
 };
 
+// Registered in Firebase console > App Check > Manage debug tokens
+const APPCHECK_DEBUG_TOKEN = "649452E6-3AA8-44C6-A142-EC1ACF558848";
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const isBrowser = typeof window !== "undefined";
+const isFirstInit = getApps().length === 0;
 
-const ai = getAI(app,{backend: new GoogleAIBackend()});
+// Initialize Firebase (reuse the existing app during hot reload)
+const app = isFirstInit ? initializeApp(firebaseConfig) : getApp();
+
+// AI Logic enforces App Check, so every AI request must carry an App Check token.
+// The debug token must be set before initializeAppCheck runs.
+if (isBrowser && isFirstInit) {
+  if (process.env.NODE_ENV !== "production") {
+    self.FIREBASE_APPCHECK_DEBUG_TOKEN = APPCHECK_DEBUG_TOKEN;
+  }
+
+  initializeAppCheck(app, {
+    provider: new ReCaptchaV3Provider(
+      process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "debug-placeholder-site-key"
+    ),
+    isTokenAutoRefreshEnabled: true,
+  });
+}
+
+// Analytics only works in the browser, not during server rendering
+export const analytics = isBrowser
+  ? isSupported().then((supported) => (supported ? getAnalytics(app) : null))
+  : Promise.resolve(null);
+
+const ai = getAI(app, { backend: new GoogleAIBackend() });
 export const model = getGenerativeModel(ai, { model: "gemini-3-flash-preview" });
 
 export default app;
