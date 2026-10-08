@@ -38,12 +38,12 @@ if (isBrowser) {
   }
 
   // 2. Prevent Next.js HMR (Fast Refresh) double-initialization errors
-  if (!(globalThis as any)._appCheckInitialized) {
+  if (!globalThis._appCheckInitialized) {
     initializeAppCheck(app, {
       provider: new ReCaptchaEnterpriseProvider(RECAPTCHA_ENTERPRISE_SITE_KEY),
       isTokenAutoRefreshEnabled: true,
     });
-    (globalThis as any)._appCheckInitialized = true;
+    globalThis._appCheckInitialized = true;
   }
 }
 
